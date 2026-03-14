@@ -1,0 +1,2458 @@
+2026-03-14 20:45:40,565:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-03-14 20:45:40,565:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-03-14 20:45:40,565:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-03-14 20:45:40,565:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-03-14 20:51:40,027:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-03-14 20:51:40,033:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-03-14 20:51:40,033:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-03-14 20:51:40,033:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-03-14 20:53:13,888:INFO:PyCaret ClassificationExperiment
+2026-03-14 20:53:13,888:INFO:Logging name: clf-default-name
+2026-03-14 20:53:13,888:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2026-03-14 20:53:13,888:INFO:version 3.3.2
+2026-03-14 20:53:13,888:INFO:Initializing setup()
+2026-03-14 20:53:13,888:INFO:self.USI: b6f6
+2026-03-14 20:53:13,888:INFO:self._variable_keys: {'X_train', 'pipeline', 'fold_shuffle_param', 'html_param', '_available_plots', 'fix_imbalance', 'n_jobs_param', 'y_train', 'logging_param', 'gpu_n_jobs_param', 'log_plots_param', 'target_param', 'exp_id', 'exp_name_log', 'X', 'fold_generator', 'y', 'seed', 'X_test', 'is_multiclass', 'USI', 'data', 'y_test', 'fold_groups_param', 'gpu_param', 'memory', '_ml_usecase', 'idx'}
+2026-03-14 20:53:13,888:INFO:Checking environment
+2026-03-14 20:53:13,888:INFO:python_version: 3.11.9
+2026-03-14 20:53:13,888:INFO:python_build: ('tags/v3.11.9:de54cf5', 'Apr  2 2024 10:12:12')
+2026-03-14 20:53:13,888:INFO:machine: AMD64
+2026-03-14 20:53:13,888:INFO:platform: Windows-10-10.0.19045-SP0
+2026-03-14 20:53:13,892:INFO:Memory: svmem(total=17041727488, available=4192825344, percent=75.4, used=12848902144, free=4192825344)
+2026-03-14 20:53:13,892:INFO:Physical Core: 8
+2026-03-14 20:53:13,892:INFO:Logical Core: 16
+2026-03-14 20:53:13,892:INFO:Checking libraries
+2026-03-14 20:53:13,892:INFO:System:
+2026-03-14 20:53:13,892:INFO:    python: 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]
+2026-03-14 20:53:13,892:INFO:executable: c:\Users\mateo\Documents\AI Car Project\Team16-CarBreakdown-Project\venv\Scripts\python.exe
+2026-03-14 20:53:13,893:INFO:   machine: Windows-10-10.0.19045-SP0
+2026-03-14 20:53:13,893:INFO:PyCaret required dependencies:
+2026-03-14 20:53:13,988:INFO:                 pip: 24.0
+2026-03-14 20:53:13,988:INFO:          setuptools: 65.5.0
+2026-03-14 20:53:13,988:INFO:             pycaret: 3.3.2
+2026-03-14 20:53:13,988:INFO:             IPython: 9.10.0
+2026-03-14 20:53:13,989:INFO:          ipywidgets: 8.1.8
+2026-03-14 20:53:13,989:INFO:                tqdm: 4.67.3
+2026-03-14 20:53:13,989:INFO:               numpy: 1.26.4
+2026-03-14 20:53:13,989:INFO:              pandas: 2.1.4
+2026-03-14 20:53:13,989:INFO:              jinja2: 3.1.6
+2026-03-14 20:53:13,989:INFO:               scipy: 1.11.4
+2026-03-14 20:53:13,989:INFO:              joblib: 1.3.2
+2026-03-14 20:53:13,989:INFO:             sklearn: 1.4.2
+2026-03-14 20:53:13,989:INFO:                pyod: 2.0.7
+2026-03-14 20:53:13,989:INFO:            imblearn: 0.14.1
+2026-03-14 20:53:13,989:INFO:   category_encoders: 2.7.0
+2026-03-14 20:53:13,989:INFO:            lightgbm: 4.6.0
+2026-03-14 20:53:13,989:INFO:               numba: 0.64.0
+2026-03-14 20:53:13,989:INFO:            requests: 2.32.5
+2026-03-14 20:53:13,989:INFO:          matplotlib: 3.7.5
+2026-03-14 20:53:13,989:INFO:          scikitplot: 0.3.7
+2026-03-14 20:53:13,989:INFO:         yellowbrick: 1.5
+2026-03-14 20:53:13,989:INFO:              plotly: 6.6.0
+2026-03-14 20:53:13,989:INFO:    plotly-resampler: Not installed
+2026-03-14 20:53:13,989:INFO:             kaleido: 1.2.0
+2026-03-14 20:53:13,989:INFO:           schemdraw: 0.15
+2026-03-14 20:53:13,989:INFO:         statsmodels: 0.14.6
+2026-03-14 20:53:13,989:INFO:              sktime: 0.26.0
+2026-03-14 20:53:13,989:INFO:               tbats: 1.1.3
+2026-03-14 20:53:13,989:INFO:            pmdarima: 2.0.4
+2026-03-14 20:53:13,989:INFO:              psutil: 7.2.2
+2026-03-14 20:53:13,989:INFO:          markupsafe: 3.0.3
+2026-03-14 20:53:13,989:INFO:             pickle5: Not installed
+2026-03-14 20:53:13,989:INFO:         cloudpickle: 3.1.2
+2026-03-14 20:53:13,990:INFO:         deprecation: 2.1.0
+2026-03-14 20:53:13,990:INFO:              xxhash: 3.6.0
+2026-03-14 20:53:13,990:INFO:           wurlitzer: Not installed
+2026-03-14 20:53:13,990:INFO:PyCaret optional dependencies:
+2026-03-14 20:53:14,000:INFO:                shap: Not installed
+2026-03-14 20:53:14,001:INFO:           interpret: Not installed
+2026-03-14 20:53:14,001:INFO:                umap: Not installed
+2026-03-14 20:53:14,001:INFO:     ydata_profiling: Not installed
+2026-03-14 20:53:14,001:INFO:  explainerdashboard: Not installed
+2026-03-14 20:53:14,001:INFO:             autoviz: Not installed
+2026-03-14 20:53:14,001:INFO:           fairlearn: Not installed
+2026-03-14 20:53:14,001:INFO:          deepchecks: Not installed
+2026-03-14 20:53:14,001:INFO:             xgboost: 3.2.0
+2026-03-14 20:53:14,001:INFO:            catboost: Not installed
+2026-03-14 20:53:14,001:INFO:              kmodes: Not installed
+2026-03-14 20:53:14,001:INFO:             mlxtend: Not installed
+2026-03-14 20:53:14,001:INFO:       statsforecast: Not installed
+2026-03-14 20:53:14,001:INFO:        tune_sklearn: Not installed
+2026-03-14 20:53:14,001:INFO:                 ray: Not installed
+2026-03-14 20:53:14,001:INFO:            hyperopt: Not installed
+2026-03-14 20:53:14,001:INFO:              optuna: Not installed
+2026-03-14 20:53:14,001:INFO:               skopt: Not installed
+2026-03-14 20:53:14,001:INFO:              mlflow: Not installed
+2026-03-14 20:53:14,001:INFO:              gradio: Not installed
+2026-03-14 20:53:14,001:INFO:             fastapi: Not installed
+2026-03-14 20:53:14,001:INFO:             uvicorn: Not installed
+2026-03-14 20:53:14,001:INFO:              m2cgen: Not installed
+2026-03-14 20:53:14,001:INFO:           evidently: Not installed
+2026-03-14 20:53:14,001:INFO:               fugue: Not installed
+2026-03-14 20:53:14,001:INFO:           streamlit: Not installed
+2026-03-14 20:53:14,001:INFO:             prophet: Not installed
+2026-03-14 20:53:14,001:INFO:None
+2026-03-14 20:53:14,001:INFO:Set up data.
+2026-03-14 20:53:14,014:INFO:Set up folding strategy.
+2026-03-14 20:53:14,015:INFO:Set up train/test split.
+2026-03-14 20:53:14,115:INFO:Set up index.
+2026-03-14 20:53:14,116:INFO:Assigning column types.
+2026-03-14 20:53:14,121:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2026-03-14 20:53:14,156:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2026-03-14 20:53:14,158:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-03-14 20:53:14,186:INFO:Soft dependency imported: xgboost: 3.2.0
+2026-03-14 20:53:14,188:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-14 20:53:14,224:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2026-03-14 20:53:14,224:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-03-14 20:53:14,250:INFO:Soft dependency imported: xgboost: 3.2.0
+2026-03-14 20:53:14,252:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-14 20:53:14,252:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2026-03-14 20:53:14,287:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-03-14 20:53:14,309:INFO:Soft dependency imported: xgboost: 3.2.0
+2026-03-14 20:53:14,311:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-14 20:53:14,346:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-03-14 20:53:14,368:INFO:Soft dependency imported: xgboost: 3.2.0
+2026-03-14 20:53:14,370:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-14 20:53:14,370:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2026-03-14 20:53:14,429:INFO:Soft dependency imported: xgboost: 3.2.0
+2026-03-14 20:53:14,431:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-14 20:53:14,491:INFO:Soft dependency imported: xgboost: 3.2.0
+2026-03-14 20:53:14,493:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-14 20:53:14,495:INFO:Preparing preprocessing pipeline...
+2026-03-14 20:53:14,496:INFO:Set up simple imputation.
+2026-03-14 20:53:14,499:INFO:Set up encoding of categorical features.
+2026-03-14 20:53:14,499:INFO:Set up imbalanced handling.
+2026-03-14 20:53:14,603:INFO:Finished creating preprocessing pipeline.
+2026-03-14 20:53:14,610:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\mateo\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['id', 'vehicle_age_years',
+                                             'mileage_km', 'engine_hours',
+                                             'last_service_km_ago',
+                                             'oil_quality_pct',
+                                             'avg_trip_length_km',
+                                             'cleanliness_score',
+                                             'driver_satisfaction_score',
+                                             'mileage_per_year', 'hours_per_km',
+                                             'servic...
+                                    transformer=OneHotEncoder(cols=['vehicle_brand',
+                                                                    'weather_exposure',
+                                                                    'fuel_type',
+                                                                    'tyre_type'],
+                                                              drop_invariant=False,
+                                                              handle_missing='return_nan',
+                                                              handle_unknown='value',
+                                                              return_df=True,
+                                                              use_cat_names=True,
+                                                              verbose=0))),
+                ('balance',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=FixImbalancer(estimator=SMOTE(k_neighbors=5,
+                                                                              random_state=123,
+                                                                              sampling_strategy='auto'))))],
+         verbose=False)
+2026-03-14 20:53:14,610:INFO:Creating final display dataframe.
+2026-03-14 20:53:14,859:INFO:Setup _display_container:                     Description                   Value
+0                    Session id                     123
+1                        Target  breakdown_next_30_days
+2                   Target type                  Binary
+3           Original data shape               (963, 28)
+4        Transformed data shape              (1409, 46)
+5   Transformed train set shape              (1120, 46)
+6    Transformed test set shape               (289, 46)
+7              Numeric features                      23
+8          Categorical features                       4
+9      Rows with missing values                   21.2%
+10                   Preprocess                    True
+11              Imputation type                  simple
+12           Numeric imputation                    mean
+13       Categorical imputation                    mode
+14     Maximum one-hot encoding                      25
+15              Encoding method                    None
+16                Fix imbalance                    True
+17         Fix imbalance method                   SMOTE
+18               Fold Generator         StratifiedKFold
+19                  Fold Number                      10
+20                     CPU Jobs                      -1
+21                      Use GPU                   False
+22               Log Experiment                   False
+23              Experiment Name        clf-default-name
+24                          USI                    b6f6
+2026-03-14 20:53:14,930:INFO:Soft dependency imported: xgboost: 3.2.0
+2026-03-14 20:53:14,932:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-14 20:53:14,992:INFO:Soft dependency imported: xgboost: 3.2.0
+2026-03-14 20:53:14,994:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-14 20:53:14,995:INFO:setup() successfully completed in 1.11s...............
+2026-03-14 20:53:14,995:INFO:Initializing create_model()
+2026-03-14 20:53:14,995:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001D2FC92FF90>, estimator=lightgbm, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-03-14 20:53:14,995:INFO:Checking exceptions
+2026-03-14 20:53:15,014:INFO:Importing libraries
+2026-03-14 20:53:15,014:INFO:Copying training dataset
+2026-03-14 20:53:15,024:INFO:Defining folds
+2026-03-14 20:53:15,025:INFO:Declaring metric variables
+2026-03-14 20:53:15,027:INFO:Importing untrained model
+2026-03-14 20:53:15,031:INFO:Light Gradient Boosting Machine Imported successfully
+2026-03-14 20:53:15,036:INFO:Starting cross validation
+2026-03-14 20:53:15,038:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2026-03-14 20:53:18,239:INFO:Calculating mean and std
+2026-03-14 20:53:18,240:INFO:Creating metrics dataframe
+2026-03-14 20:53:18,246:INFO:Finalizing model
+2026-03-14 20:53:18,333:INFO:[LightGBM] [Info] Number of positive: 560, number of negative: 560
+2026-03-14 20:53:18,334:INFO:[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.000792 seconds.
+2026-03-14 20:53:18,334:INFO:You can set `force_col_wise=true` to remove the overhead.
+2026-03-14 20:53:18,334:INFO:[LightGBM] [Info] Total Bins 5395
+2026-03-14 20:53:18,335:INFO:[LightGBM] [Info] Number of data points in the train set: 1120, number of used features: 41
+2026-03-14 20:53:18,335:INFO:[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.500000 -> initscore=0.000000
+2026-03-14 20:53:18,424:INFO:Uploading results into container
+2026-03-14 20:53:18,425:INFO:Uploading model into container now
+2026-03-14 20:53:18,434:INFO:_master_model_container: 1
+2026-03-14 20:53:18,434:INFO:_display_container: 2
+2026-03-14 20:53:18,435:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2026-03-14 20:53:18,435:INFO:create_model() successfully completed......................................
+2026-03-14 20:53:18,540:INFO:Initializing tune_model()
+2026-03-14 20:53:18,540:INFO:tune_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001D2FC92FF90>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), fold=None, round=4, n_iter=10, custom_grid=None, optimize=Recall, custom_scorer=None, search_library=scikit-learn, search_algorithm=None, early_stopping=False, early_stopping_max_iters=10, choose_better=True, fit_kwargs=None, groups=None, return_tuner=False, verbose=True, tuner_verbose=True, return_train_score=False, kwargs={})
+2026-03-14 20:53:18,541:INFO:Checking exceptions
+2026-03-14 20:53:18,554:INFO:Copying training dataset
+2026-03-14 20:53:18,559:INFO:Checking base model
+2026-03-14 20:53:18,559:INFO:Base model : Light Gradient Boosting Machine
+2026-03-14 20:53:18,562:INFO:Declaring metric variables
+2026-03-14 20:53:18,565:INFO:Defining Hyperparameters
+2026-03-14 20:53:18,653:INFO:Tuning with n_jobs=-1
+2026-03-14 20:53:18,653:INFO:Initializing RandomizedSearchCV
+2026-03-14 20:53:30,919:INFO:best_params: {'actual_estimator__reg_lambda': 0.0005, 'actual_estimator__reg_alpha': 0.2, 'actual_estimator__num_leaves': 2, 'actual_estimator__n_estimators': 30, 'actual_estimator__min_split_gain': 0, 'actual_estimator__min_child_samples': 46, 'actual_estimator__learning_rate': 0.0005, 'actual_estimator__feature_fraction': 1.0, 'actual_estimator__bagging_freq': 3, 'actual_estimator__bagging_fraction': 0.9}
+2026-03-14 20:53:30,920:INFO:Hyperparameter search completed
+2026-03-14 20:53:30,920:INFO:SubProcess create_model() called ==================================
+2026-03-14 20:53:30,921:INFO:Initializing create_model()
+2026-03-14 20:53:30,921:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001D2FC92FF90>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001D2FC861AD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={'reg_lambda': 0.0005, 'reg_alpha': 0.2, 'num_leaves': 2, 'n_estimators': 30, 'min_split_gain': 0, 'min_child_samples': 46, 'learning_rate': 0.0005, 'feature_fraction': 1.0, 'bagging_freq': 3, 'bagging_fraction': 0.9})
+2026-03-14 20:53:30,921:INFO:Checking exceptions
+2026-03-14 20:53:30,922:INFO:Importing libraries
+2026-03-14 20:53:30,922:INFO:Copying training dataset
+2026-03-14 20:53:30,930:INFO:Defining folds
+2026-03-14 20:53:30,930:INFO:Declaring metric variables
+2026-03-14 20:53:30,934:INFO:Importing untrained model
+2026-03-14 20:53:30,934:INFO:Declaring custom model
+2026-03-14 20:53:30,939:INFO:Light Gradient Boosting Machine Imported successfully
+2026-03-14 20:53:30,945:INFO:Starting cross validation
+2026-03-14 20:53:30,948:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2026-03-14 20:53:31,333:INFO:Calculating mean and std
+2026-03-14 20:53:31,334:INFO:Creating metrics dataframe
+2026-03-14 20:53:31,340:INFO:Finalizing model
+2026-03-14 20:53:31,427:INFO:[LightGBM] [Warning] feature_fraction is set=1.0, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=1.0
+2026-03-14 20:53:31,427:INFO:[LightGBM] [Warning] bagging_fraction is set=0.9, subsample=1.0 will be ignored. Current value: bagging_fraction=0.9
+2026-03-14 20:53:31,427:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2026-03-14 20:53:31,431:INFO:[LightGBM] [Warning] feature_fraction is set=1.0, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=1.0
+2026-03-14 20:53:31,431:INFO:[LightGBM] [Warning] bagging_fraction is set=0.9, subsample=1.0 will be ignored. Current value: bagging_fraction=0.9
+2026-03-14 20:53:31,431:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2026-03-14 20:53:31,431:INFO:[LightGBM] [Info] Number of positive: 560, number of negative: 560
+2026-03-14 20:53:31,433:INFO:[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.001072 seconds.
+2026-03-14 20:53:31,433:INFO:You can set `force_col_wise=true` to remove the overhead.
+2026-03-14 20:53:31,433:INFO:[LightGBM] [Info] Total Bins 5386
+2026-03-14 20:53:31,433:INFO:[LightGBM] [Info] Number of data points in the train set: 1120, number of used features: 40
+2026-03-14 20:53:31,434:INFO:[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.500000 -> initscore=0.000000
+2026-03-14 20:53:31,442:INFO:Uploading results into container
+2026-03-14 20:53:31,443:INFO:Uploading model into container now
+2026-03-14 20:53:31,444:INFO:_master_model_container: 2
+2026-03-14 20:53:31,444:INFO:_display_container: 3
+2026-03-14 20:53:31,445:INFO:LGBMClassifier(bagging_fraction=0.9, bagging_freq=3, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=1.0,
+               importance_type='split', learning_rate=0.0005, max_depth=-1,
+               min_child_samples=46, min_child_weight=0.001, min_split_gain=0,
+               n_estimators=30, n_jobs=-1, num_leaves=2, objective=None,
+               random_state=123, reg_alpha=0.2, reg_lambda=0.0005,
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0)
+2026-03-14 20:53:31,445:INFO:create_model() successfully completed......................................
+2026-03-14 20:53:31,552:INFO:SubProcess create_model() end ==================================
+2026-03-14 20:53:31,552:INFO:choose_better activated
+2026-03-14 20:53:31,555:INFO:SubProcess create_model() called ==================================
+2026-03-14 20:53:31,556:INFO:Initializing create_model()
+2026-03-14 20:53:31,556:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001D2FC92FF90>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-03-14 20:53:31,556:INFO:Checking exceptions
+2026-03-14 20:53:31,558:INFO:Importing libraries
+2026-03-14 20:53:31,558:INFO:Copying training dataset
+2026-03-14 20:53:31,564:INFO:Defining folds
+2026-03-14 20:53:31,564:INFO:Declaring metric variables
+2026-03-14 20:53:31,564:INFO:Importing untrained model
+2026-03-14 20:53:31,564:INFO:Declaring custom model
+2026-03-14 20:53:31,565:INFO:Light Gradient Boosting Machine Imported successfully
+2026-03-14 20:53:31,565:INFO:Starting cross validation
+2026-03-14 20:53:31,566:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2026-03-14 20:53:32,799:INFO:Calculating mean and std
+2026-03-14 20:53:32,799:INFO:Creating metrics dataframe
+2026-03-14 20:53:32,801:INFO:Finalizing model
+2026-03-14 20:53:32,889:INFO:[LightGBM] [Info] Number of positive: 560, number of negative: 560
+2026-03-14 20:53:32,891:INFO:[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.001128 seconds.
+2026-03-14 20:53:32,891:INFO:You can set `force_col_wise=true` to remove the overhead.
+2026-03-14 20:53:32,891:INFO:[LightGBM] [Info] Total Bins 5395
+2026-03-14 20:53:32,891:INFO:[LightGBM] [Info] Number of data points in the train set: 1120, number of used features: 41
+2026-03-14 20:53:32,891:INFO:[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.500000 -> initscore=0.000000
+2026-03-14 20:53:33,015:INFO:Uploading results into container
+2026-03-14 20:53:33,016:INFO:Uploading model into container now
+2026-03-14 20:53:33,016:INFO:_master_model_container: 3
+2026-03-14 20:53:33,017:INFO:_display_container: 4
+2026-03-14 20:53:33,017:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2026-03-14 20:53:33,017:INFO:create_model() successfully completed......................................
+2026-03-14 20:53:33,124:INFO:SubProcess create_model() end ==================================
+2026-03-14 20:53:33,125:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0) result for Recall is 0.0886
+2026-03-14 20:53:33,125:INFO:LGBMClassifier(bagging_fraction=0.9, bagging_freq=3, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=1.0,
+               importance_type='split', learning_rate=0.0005, max_depth=-1,
+               min_child_samples=46, min_child_weight=0.001, min_split_gain=0,
+               n_estimators=30, n_jobs=-1, num_leaves=2, objective=None,
+               random_state=123, reg_alpha=0.2, reg_lambda=0.0005,
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0) result for Recall is 0.4629
+2026-03-14 20:53:33,126:INFO:LGBMClassifier(bagging_fraction=0.9, bagging_freq=3, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=1.0,
+               importance_type='split', learning_rate=0.0005, max_depth=-1,
+               min_child_samples=46, min_child_weight=0.001, min_split_gain=0,
+               n_estimators=30, n_jobs=-1, num_leaves=2, objective=None,
+               random_state=123, reg_alpha=0.2, reg_lambda=0.0005,
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0) is best model
+2026-03-14 20:53:33,126:INFO:choose_better completed
+2026-03-14 20:53:33,133:INFO:_master_model_container: 3
+2026-03-14 20:53:33,133:INFO:_display_container: 3
+2026-03-14 20:53:33,133:INFO:LGBMClassifier(bagging_fraction=0.9, bagging_freq=3, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=1.0,
+               importance_type='split', learning_rate=0.0005, max_depth=-1,
+               min_child_samples=46, min_child_weight=0.001, min_split_gain=0,
+               n_estimators=30, n_jobs=-1, num_leaves=2, objective=None,
+               random_state=123, reg_alpha=0.2, reg_lambda=0.0005,
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0)
+2026-03-14 20:53:33,134:INFO:tune_model() successfully completed......................................
+2026-03-14 20:53:33,231:INFO:Initializing predict_model()
+2026-03-14 20:53:33,231:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001D2FC92FF90>, estimator=LGBMClassifier(bagging_fraction=0.9, bagging_freq=3, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=1.0,
+               importance_type='split', learning_rate=0.0005, max_depth=-1,
+               min_child_samples=46, min_child_weight=0.001, min_split_gain=0,
+               n_estimators=30, n_jobs=-1, num_leaves=2, objective=None,
+               random_state=123, reg_alpha=0.2, reg_lambda=0.0005,
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0), probability_threshold=None, encoded_labels=False, raw_score=True, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001D2FC87D6C0>)
+2026-03-14 20:53:33,231:INFO:Checking exceptions
+2026-03-14 20:53:33,231:INFO:Preloading libraries
+2026-03-14 20:53:33,232:INFO:Set up data.
+2026-03-14 20:53:33,240:INFO:Set up index.
+2026-03-14 21:02:21,187:INFO:Initializing evaluate_model()
+2026-03-14 21:02:21,187:INFO:evaluate_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001D2FC92FF90>, estimator=LGBMClassifier(bagging_fraction=0.9, bagging_freq=3, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=1.0,
+               importance_type='split', learning_rate=0.0005, max_depth=-1,
+               min_child_samples=46, min_child_weight=0.001, min_split_gain=0,
+               n_estimators=30, n_jobs=-1, num_leaves=2, objective=None,
+               random_state=123, reg_alpha=0.2, reg_lambda=0.0005,
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0), fold=      vehicle_age_years     mileage_km  engine_hours  last_service_km_ago  \
+556                11.0  124309.494423   4301.154619          4004.731935   
+485                 0.0  142311.902732   4943.773382          2461.103449   
+429                20.0  134303.152147   4457.937744         16180.479797   
+211                18.0            NaN   5408.501262         19177.652901   
+970                 7.0   50219.483055   1375.229635          3312.838203   
+...                 ...            ...           ...                  ...   
+1006                9.0  130837.789742   3890.772990          7879.839663   
+275                13.0  230705.306204   8329.265973          1756.136199   
+269                20.0   53655.163458   1682.412408         12197.502848   
+466                 9.0  213048.624551   6716.620730          4182.309222   
+841                 6.0  111526.752723   3639.506933          3581.393670   
+
+      oil_quality_pct  avg_trip_length_km  cleanliness_score  \
+556         46.408458           26.557243          51.520640   
+485               NaN           11.992175          65.866210   
+429         28.911781           47.300122          48.401796   
+211         82.609512            8.229187          78.117049   
+970         77.915076            6.534128          67.145754   
+...               ...                 ...                ...   
+1006        54.785761            4.434533          68.628834   
+275         22.308457           15.396129          52.368827   
+269         66.597758          135.218000          82.243471   
+466         49.824977           12.978476          78.869066   
+841         59.789042            6.955328          70.974912   
+
+      driver_satisfaction_score  mileage_per_year  hours_per_km  ...  \
+556                    8.477450      10359.124535      0.034600  ...   
+485                    7.249730     142311.902732      0.034739  ...   
+429                    8.645025       6395.388197      0.033193  ...   
+211                    4.814081               NaN           NaN  ...   
+970                    5.256413       6277.435382      0.027384  ...   
+...                         ...               ...           ...  ...   
+1006                   7.654648      13083.778974      0.029737  ...   
+275                    7.826660      16478.950443      0.036103  ...   
+269                    7.602725       2555.007784      0.031355  ...   
+466                    7.239095      21304.862455      0.031526  ...   
+841                    5.844435      15932.393246      0.032633  ...   
+
+      age_x_mileage  oil_x_service  log_mileage  log_last_service  \
+556      129.035915       0.011586    11.730538          8.295482   
+485        0.000000            NaN    11.865783          7.808771   
+429      236.157246       0.001787    11.807862          9.691623   
+211             NaN       0.004307          NaN          9.861553   
+970       75.769248       0.023512    10.824178          8.105862   
+...             ...            ...          ...               ...   
+1006     106.035491       0.006952    11.781721          8.972190   
+275      160.535710       0.012696    12.348901          7.471441   
+269      217.807032       0.005460    10.890352          9.409069   
+466      110.423524       0.011910    12.269280          8.338858   
+841       69.732172       0.016690    11.622029          8.183786   
+
+      log_avg_trip  risk_score  vehicle_brand  weather_exposure  fuel_type  \
+556       3.316265           0            BMW            medium     diesel   
+485       2.564347           0     Volkswagen             other     hybrid   
+429       3.877434           7            BMW               low   electric   
+211       2.222371           5           Ford               low     diesel   
+970       2.019443           0           Ford            medium      other   
+...            ...         ...            ...               ...        ...   
+1006      1.692774           0            Kia            medium     diesel   
+275       2.797045           3          Volvo              high     hybrid   
+269       4.914257           2          Volvo            medium     petrol   
+466       2.637519           1         Toyota             other     petrol   
+841       2.073842           0            BMW            medium      other   
+
+       tyre_type  
+556       winter  
+485       summer  
+429   all-season  
+211       winter  
+970   all-season  
+...          ...  
+1006      summer  
+275   all-season  
+269       summer  
+466   all-season  
+841       winter  
+
+[770 rows x 26 columns], fit_kwargs=556     0
+485     0
+429     1
+211     0
+970     0
+       ..
+1006    0
+275     0
+269     1
+466     0
+841     0
+Name: breakdown_next_30_days, Length: 770, dtype: int64, plot_kwargs=     vehicle_age_years     mileage_km  engine_hours  last_service_km_ago  \
+27                 4.0   87533.493029   2765.846448         21316.130571   
+796                5.0  147589.346458   4549.904501         13963.908802   
+37                19.0  395502.175362   9794.719634          5017.342085   
+20                13.0  154032.443733   4870.202473          3512.536874   
+688                6.0   65107.438003   2150.094577         13562.870082   
+..                 ...            ...           ...                  ...   
+4                 10.0  118366.394287   4222.193011         12551.181627   
+976                7.0  230825.889803   7038.180225          2939.845329   
+563                6.0   85945.745455   3162.813711          7906.368196   
+133               10.0   79115.204118   2654.280940          9001.087092   
+298                3.0  279238.975395   9637.184312          4126.982477   
+
+     oil_quality_pct  avg_trip_length_km  cleanliness_score  \
+27         87.498440           10.656366          89.967949   
+796        85.888715           12.443022          77.203383   
+37         57.434907           25.680096          80.958868   
+20         44.113744           11.173023          76.500073   
+688        78.554760           11.902804          59.010423   
+..               ...                 ...                ...   
+4          65.766074           47.159242          77.368891   
+976        55.834217           37.707961          77.386908   
+563        45.927760           34.507778          54.871673   
+133        23.503641            6.140335          69.328290   
+298        45.715486          120.601816          58.593908   
+
+     driver_satisfaction_score  mileage_per_year  hours_per_km  ...  \
+27                    7.543847      17506.698606      0.031597  ...   
+796                   6.696520      24598.224410      0.030828  ...   
+37                    8.185785      19775.108768      0.024765  ...   
+20                    6.516201      11002.317410      0.031618  ...   
+688                   9.100533       9301.062572      0.033023  ...   
+..                         ...               ...           ...  ...   
+4                     6.724967      10760.581299      0.035670  ...   
+976                   4.395336      28853.236225      0.030491  ...   
+563                   9.914408      12277.963636      0.036800  ...   
+133                   6.401654       7192.291283      0.033549  ...   
+298                   7.908347      69809.743849      0.034512  ...   
+
+     age_x_mileage  oil_x_service  log_mileage  log_last_service  \
+27       45.519153       0.004105    11.379788          9.967266   
+796      59.510979       0.006150    11.902196          9.544303   
+37      244.870368       0.011445    12.887914          8.520855   
+20      155.284025       0.012555    11.944925          8.164378   
+688      66.502857       0.005791    11.083809          9.515165   
+..             ...            ...          ...               ...   
+4       116.815486       0.005239    11.681549          9.437650   
+976      86.445963       0.018986    12.349423          7.986452   
+563      68.168899       0.005808    11.361483          8.975550   
+133     112.786730       0.002611    11.278673          9.105212   
+298      37.619480       0.011075    12.539827          8.325544   
+
+     log_avg_trip  risk_score  vehicle_brand  weather_exposure  fuel_type  \
+27       2.455852           3            BMW            medium     petrol   
+796      2.598460           0        Renault              high     diesel   
+37       3.283918           3        Hyundai               low     diesel   
+20       2.499222           0        Renault              high     diesel   
+688      2.557445           0        Hyundai               low     diesel   
+..            ...         ...            ...               ...        ...   
+4        3.874513           0            NaN               low     diesel   
+976      3.656045           1     Volkswagen               low     hybrid   
+563      3.569752           0         Toyota               low     diesel   
+133      1.965760           2            Kia               low   electric   
+298      4.800752           1        Hyundai              high     petrol   
+
+      tyre_type  
+27       winter  
+796      winter  
+37       winter  
+20       winter  
+688      summer  
+..          ...  
+4        winter  
+976  all-season  
+563      winter  
+133  all-season  
+298  all-season  
+
+[193 rows x 26 columns], feature_name=None, groups=27     0
+796    0
+37     1
+20     0
+688    0
+      ..
+4      0
+976    0
+563    0
+133    0
+298    1
+Name: breakdown_next_30_days, Length: 193, dtype: int64)
+2026-03-14 21:11:31,487:INFO:Initializing get_config()
+2026-03-14 21:11:31,487:INFO:get_config(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001D2FC92FF90>, variable=X_train)
+2026-03-14 21:11:31,487:INFO:Variable: 'X_train' used to return the transformed values in PyCaret 2.x. From PyCaret 3.x, this will return the raw values. If you need the transformed values, call get_config with 'X_train_transformed' instead.
+2026-03-14 21:11:31,496:INFO:Variable:  returned as         id vehicle_brand  vehicle_age_years     mileage_km  engine_hours  \
+795    909           BMW                5.0  148096.531250   5062.330078   
+790   1419           BMW               20.0  245058.390625   8721.515625   
+314   1061       Hyundai                5.0   37902.906250   1185.640259   
+867    634           BMW               11.0  116019.257812   3816.268311   
+528    664        Toyota               14.0   87719.226562   2868.748535   
+...    ...           ...                ...            ...           ...   
+461     85         Volvo               14.0  128560.289062   4277.809082   
+526    673          Ford                0.0  196900.234375   6828.342773   
+68    1222       Renault               15.0  134067.828125   4252.706543   
+1021   808       Renault                7.0  161609.546875   5451.585449   
+937   1479           BMW               19.0  148876.062500   5344.346680   
+
+      last_service_km_ago  oil_quality_pct  avg_trip_length_km  \
+795            205.674789        64.481750           33.539574   
+790            217.668549        72.418427           14.997455   
+314          38382.292969        53.852837           14.330807   
+867             12.701513        25.476303          192.326416   
+528           6194.751953        74.247086           12.915955   
+...                   ...              ...                 ...   
+461          20851.070312        45.621037            4.927779   
+526           6897.667969        70.209412                 NaN   
+68           29866.957031        65.332458          198.266251   
+1021          2291.765137        87.753418            8.556399   
+937           2248.003418        42.047535           66.958138   
+
+     weather_exposure fuel_type  ...  is_old_vehicle  is_high_mileage  \
+795               low    diesel  ...               0                0   
+790               low    petrol  ...               1                1   
+314               low    petrol  ...               0                0   
+867               low    diesel  ...               0                0   
+528               low    diesel  ...               0                0   
+...               ...       ...  ...             ...              ...   
+461            medium    hybrid  ...               0                0   
+526            medium    diesel  ...               0                0   
+68                low    diesel  ...               1                0   
+1021             high    petrol  ...               0                0   
+937              high    petrol  ...               1                0   
+
+     is_low_oil_quality  is_dirty  age_x_mileage  oil_x_service  log_mileage  \
+795                   0         0      59.528133       0.311996    11.905626   
+790                   0         0     248.185120       0.331179    12.409256   
+314                   0         0      52.714046       0.001403    10.542809   
+867                   1         0     128.276718       1.859379    11.661520   
+528                   0         0     159.346710       0.011984    11.381907   
+...                 ...       ...            ...            ...          ...   
+461                   0         0     164.698257       0.002188    11.764161   
+526                   0         0       0.000000       0.010177    12.190457   
+68                    0         0     177.091629       0.002187    11.806108   
+1021                  0         0      83.950615       0.038274    11.992945   
+937                   0         0     226.306641       0.018696    11.910876   
+
+      log_last_service  log_avg_trip  risk_score  
+795           5.331147      3.542106           0  
+790           5.387557      2.772430           3  
+314          10.555378      2.729864           3  
+867           2.617506      5.264380           2  
+528           8.731619      2.633036           0  
+...                ...           ...         ...  
+461           9.945209      1.779649           3  
+526           8.839084           NaN           0  
+68           10.304542      5.294642           5  
+1021          7.737514      2.257211           0  
+937           7.718243      4.218892           2  
+
+[674 rows x 27 columns]
+2026-03-14 21:11:31,496:INFO:get_config() successfully completed......................................
+2026-03-14 21:11:31,496:INFO:Initializing get_config()
+2026-03-14 21:11:31,497:INFO:get_config(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001D2FC92FF90>, variable=y_train)
+2026-03-14 21:11:31,497:INFO:Variable: 'y_train' used to return the transformed values in PyCaret 2.x. From PyCaret 3.x, this will return the raw values. If you need the transformed values, call get_config with 'y_train_transformed' instead.
+2026-03-14 21:11:31,499:INFO:Variable:  returned as 795     0
+790     1
+314     0
+867     0
+528     0
+       ..
+461     0
+526     0
+68      0
+1021    0
+937     0
+Name: breakdown_next_30_days, Length: 674, dtype: int8
+2026-03-14 21:11:31,499:INFO:get_config() successfully completed......................................
+2026-03-14 21:11:31,499:INFO:Initializing get_config()
+2026-03-14 21:11:31,499:INFO:get_config(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001D2FC92FF90>, variable=X_test)
+2026-03-14 21:11:31,499:INFO:Variable: 'X_test' used to return the transformed values in PyCaret 2.x. From PyCaret 3.x, this will return the raw values. If you need the transformed values, call get_config with 'X_test_transformed' instead.
+2026-03-14 21:11:31,507:INFO:Variable:  returned as        id vehicle_brand  vehicle_age_years     mileage_km  engine_hours  \
+623  1475           BMW                7.0   79080.679688   2637.702637   
+94   1180        Toyota                7.0  308279.906250   9837.985352   
+550   615    Volkswagen                6.0  196776.906250   6250.600586   
+647   975          Ford               10.0  343359.968750   9842.645508   
+637   141        Toyota               20.0   92928.929688   3450.510986   
+..    ...           ...                ...            ...           ...   
+565   561          Ford               19.0   61428.097656   1849.740356   
+11   1283    Volkswagen                8.0   92034.531250   2890.748047   
+924  1081        Toyota               10.0   81871.015625   2472.680664   
+668   238        Toyota                4.0  110560.187500   3475.711426   
+185   477           Kia               15.0  154997.203125   4928.783203   
+
+     last_service_km_ago  oil_quality_pct  avg_trip_length_km  \
+623         27086.728516        69.187820           30.209646   
+94           4894.726562        51.861294           19.772991   
+550         26542.619141        57.966312            2.730195   
+647           151.879745        76.192619            4.728339   
+637         28116.113281        84.868134          166.439728   
+..                   ...              ...                 ...   
+565         23537.816406        67.375999           13.692318   
+11           4632.801270        61.055832           86.167648   
+924         11300.654297        56.638775           37.130077   
+668          3615.368896        58.381729           24.678190   
+185         11218.697266        78.044548           13.073437   
+
+    weather_exposure fuel_type  ...  is_old_vehicle  is_high_mileage  \
+623           medium    petrol  ...               0                0   
+94               low    petrol  ...               0                1   
+550             high    petrol  ...               0                0   
+647              NaN    petrol  ...               0                1   
+637              low    petrol  ...               1                0   
+..               ...       ...  ...             ...              ...   
+565           medium    petrol  ...               1                0   
+11               low    diesel  ...               0                0   
+924            other    diesel  ...               0                0   
+668           medium    diesel  ...               0                0   
+185             high    petrol  ...               1                0   
+
+    is_low_oil_quality  is_dirty  age_x_mileage  oil_x_service  log_mileage  \
+623                  0         0      78.947655       0.002554    11.278236   
+94                   0         0      88.471367       0.010593    12.638766   
+550                  0         0      73.138985       0.002184    12.189831   
+647                  0         0     127.465378       0.498383    12.746537   
+637                  0         0     228.792023       0.003018    11.439601   
+..                 ...       ...            ...            ...          ...   
+565                  0         0     209.487137       0.002862    11.025639   
+11                   0         0      91.439438       0.013176    11.429930   
+924                  0         0     113.129128       0.005012    11.312913   
+668                  0         0      46.453297       0.016144    11.613324   
+185                  0         0     179.267532       0.006956    11.951169   
+
+     log_last_service  log_avg_trip  risk_score  
+623         10.206836      3.440727           3  
+94           8.496118      3.033654           1  
+550         10.186544      1.316460           3  
+647          5.029652      1.745426           1  
+637         10.244134      5.120624           5  
+..                ...           ...         ...  
+565         10.066406      2.687325           5  
+11           8.441133      4.467833           0  
+924          9.332705      3.641003           0  
+668          8.193226      3.245642           0  
+185          9.325426      2.644289           2  
+
+[289 rows x 27 columns]
+2026-03-14 21:11:31,507:INFO:get_config() successfully completed......................................
+2026-03-14 21:11:31,507:INFO:Initializing get_config()
+2026-03-14 21:11:31,507:INFO:get_config(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001D2FC92FF90>, variable=y_test)
+2026-03-14 21:11:31,507:INFO:Variable: 'y_test' used to return the transformed values in PyCaret 2.x. From PyCaret 3.x, this will return the raw values. If you need the transformed values, call get_config with 'y_test_transformed' instead.
+2026-03-14 21:11:31,509:INFO:Variable:  returned as 623    0
+94     1
+550    0
+647    0
+637    0
+      ..
+565    0
+11     0
+924    1
+668    0
+185    0
+Name: breakdown_next_30_days, Length: 289, dtype: int8
+2026-03-14 21:11:31,509:INFO:get_config() successfully completed......................................
+2026-03-14 21:11:31,509:INFO:Initializing get_config()
+2026-03-14 21:11:31,509:INFO:get_config(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001D2FC92FF90>, variable=pipeline)
+2026-03-14 21:11:31,514:INFO:Variable:  returned as Pipeline(memory=FastMemory(location=C:\Users\mateo\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['id', 'vehicle_age_years',
+                                             'mileage_km', 'engine_hours',
+                                             'last_service_km_ago',
+                                             'oil_quality_pct',
+                                             'avg_trip_length_km',
+                                             'cleanliness_score',
+                                             'driver_satisfaction_score',
+                                             'mileage_per_year', 'hours_per_km',
+                                             'servic...
+                                    transformer=OneHotEncoder(cols=['vehicle_brand',
+                                                                    'weather_exposure',
+                                                                    'fuel_type',
+                                                                    'tyre_type'],
+                                                              drop_invariant=False,
+                                                              handle_missing='return_nan',
+                                                              handle_unknown='value',
+                                                              return_df=True,
+                                                              use_cat_names=True,
+                                                              verbose=0))),
+                ('balance',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=FixImbalancer(estimator=SMOTE(k_neighbors=5,
+                                                                              random_state=123,
+                                                                              sampling_strategy='auto'))))],
+         verbose=False)
+2026-03-14 21:11:31,514:INFO:get_config() successfully completed......................................
+2026-03-14 21:13:15,877:INFO:PyCaret ClassificationExperiment
+2026-03-14 21:13:15,877:INFO:Logging name: clf-default-name
+2026-03-14 21:13:15,877:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2026-03-14 21:13:15,877:INFO:version 3.3.2
+2026-03-14 21:13:15,877:INFO:Initializing setup()
+2026-03-14 21:13:15,877:INFO:self.USI: 8a7a
+2026-03-14 21:13:15,877:INFO:self._variable_keys: {'X_train', 'pipeline', 'fold_shuffle_param', 'html_param', '_available_plots', 'fix_imbalance', 'n_jobs_param', 'y_train', 'logging_param', 'gpu_n_jobs_param', 'log_plots_param', 'target_param', 'exp_id', 'exp_name_log', 'X', 'fold_generator', 'y', 'seed', 'X_test', 'is_multiclass', 'USI', 'data', 'y_test', 'fold_groups_param', 'gpu_param', 'memory', '_ml_usecase', 'idx'}
+2026-03-14 21:13:15,877:INFO:Checking environment
+2026-03-14 21:13:15,877:INFO:python_version: 3.11.9
+2026-03-14 21:13:15,877:INFO:python_build: ('tags/v3.11.9:de54cf5', 'Apr  2 2024 10:12:12')
+2026-03-14 21:13:15,877:INFO:machine: AMD64
+2026-03-14 21:13:15,877:INFO:platform: Windows-10-10.0.19045-SP0
+2026-03-14 21:13:15,881:INFO:Memory: svmem(total=17041727488, available=7216881664, percent=57.7, used=9824845824, free=7216881664)
+2026-03-14 21:13:15,881:INFO:Physical Core: 8
+2026-03-14 21:13:15,881:INFO:Logical Core: 16
+2026-03-14 21:13:15,881:INFO:Checking libraries
+2026-03-14 21:13:15,881:INFO:System:
+2026-03-14 21:13:15,881:INFO:    python: 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]
+2026-03-14 21:13:15,881:INFO:executable: c:\Users\mateo\Documents\AI Car Project\Team16-CarBreakdown-Project\venv\Scripts\python.exe
+2026-03-14 21:13:15,881:INFO:   machine: Windows-10-10.0.19045-SP0
+2026-03-14 21:13:15,881:INFO:PyCaret required dependencies:
+2026-03-14 21:13:15,881:INFO:                 pip: 24.0
+2026-03-14 21:13:15,881:INFO:          setuptools: 65.5.0
+2026-03-14 21:13:15,882:INFO:             pycaret: 3.3.2
+2026-03-14 21:13:15,882:INFO:             IPython: 9.10.0
+2026-03-14 21:13:15,882:INFO:          ipywidgets: 8.1.8
+2026-03-14 21:13:15,882:INFO:                tqdm: 4.67.3
+2026-03-14 21:13:15,882:INFO:               numpy: 1.26.4
+2026-03-14 21:13:15,882:INFO:              pandas: 2.1.4
+2026-03-14 21:13:15,882:INFO:              jinja2: 3.1.6
+2026-03-14 21:13:15,882:INFO:               scipy: 1.11.4
+2026-03-14 21:13:15,882:INFO:              joblib: 1.3.2
+2026-03-14 21:13:15,882:INFO:             sklearn: 1.4.2
+2026-03-14 21:13:15,882:INFO:                pyod: 2.0.7
+2026-03-14 21:13:15,882:INFO:            imblearn: 0.14.1
+2026-03-14 21:13:15,882:INFO:   category_encoders: 2.7.0
+2026-03-14 21:13:15,882:INFO:            lightgbm: 4.6.0
+2026-03-14 21:13:15,882:INFO:               numba: 0.64.0
+2026-03-14 21:13:15,882:INFO:            requests: 2.32.5
+2026-03-14 21:13:15,882:INFO:          matplotlib: 3.7.5
+2026-03-14 21:13:15,882:INFO:          scikitplot: 0.3.7
+2026-03-14 21:13:15,882:INFO:         yellowbrick: 1.5
+2026-03-14 21:13:15,882:INFO:              plotly: 6.6.0
+2026-03-14 21:13:15,882:INFO:    plotly-resampler: Not installed
+2026-03-14 21:13:15,882:INFO:             kaleido: 1.2.0
+2026-03-14 21:13:15,882:INFO:           schemdraw: 0.15
+2026-03-14 21:13:15,882:INFO:         statsmodels: 0.14.6
+2026-03-14 21:13:15,882:INFO:              sktime: 0.26.0
+2026-03-14 21:13:15,882:INFO:               tbats: 1.1.3
+2026-03-14 21:13:15,883:INFO:            pmdarima: 2.0.4
+2026-03-14 21:13:15,883:INFO:              psutil: 7.2.2
+2026-03-14 21:13:15,883:INFO:          markupsafe: 3.0.3
+2026-03-14 21:13:15,883:INFO:             pickle5: Not installed
+2026-03-14 21:13:15,883:INFO:         cloudpickle: 3.1.2
+2026-03-14 21:13:15,883:INFO:         deprecation: 2.1.0
+2026-03-14 21:13:15,883:INFO:              xxhash: 3.6.0
+2026-03-14 21:13:15,883:INFO:           wurlitzer: Not installed
+2026-03-14 21:13:15,883:INFO:PyCaret optional dependencies:
+2026-03-14 21:13:15,883:INFO:                shap: Not installed
+2026-03-14 21:13:15,883:INFO:           interpret: Not installed
+2026-03-14 21:13:15,883:INFO:                umap: Not installed
+2026-03-14 21:13:15,883:INFO:     ydata_profiling: Not installed
+2026-03-14 21:13:15,883:INFO:  explainerdashboard: Not installed
+2026-03-14 21:13:15,883:INFO:             autoviz: Not installed
+2026-03-14 21:13:15,883:INFO:           fairlearn: Not installed
+2026-03-14 21:13:15,883:INFO:          deepchecks: Not installed
+2026-03-14 21:13:15,884:INFO:             xgboost: 3.2.0
+2026-03-14 21:13:15,884:INFO:            catboost: Not installed
+2026-03-14 21:13:15,884:INFO:              kmodes: Not installed
+2026-03-14 21:13:15,884:INFO:             mlxtend: Not installed
+2026-03-14 21:13:15,884:INFO:       statsforecast: Not installed
+2026-03-14 21:13:15,884:INFO:        tune_sklearn: Not installed
+2026-03-14 21:13:15,884:INFO:                 ray: Not installed
+2026-03-14 21:13:15,884:INFO:            hyperopt: Not installed
+2026-03-14 21:13:15,884:INFO:              optuna: Not installed
+2026-03-14 21:13:15,884:INFO:               skopt: Not installed
+2026-03-14 21:13:15,884:INFO:              mlflow: Not installed
+2026-03-14 21:13:15,884:INFO:              gradio: Not installed
+2026-03-14 21:13:15,884:INFO:             fastapi: Not installed
+2026-03-14 21:13:15,884:INFO:             uvicorn: Not installed
+2026-03-14 21:13:15,884:INFO:              m2cgen: Not installed
+2026-03-14 21:13:15,884:INFO:           evidently: Not installed
+2026-03-14 21:13:15,884:INFO:               fugue: Not installed
+2026-03-14 21:13:15,884:INFO:           streamlit: Not installed
+2026-03-14 21:13:15,884:INFO:             prophet: Not installed
+2026-03-14 21:13:15,885:INFO:None
+2026-03-14 21:13:15,885:INFO:Set up data.
+2026-03-14 21:13:15,893:INFO:Set up folding strategy.
+2026-03-14 21:13:15,893:INFO:Set up train/test split.
+2026-03-14 21:13:15,899:INFO:Set up index.
+2026-03-14 21:13:15,899:INFO:Assigning column types.
+2026-03-14 21:13:15,903:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2026-03-14 21:13:15,945:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2026-03-14 21:13:15,946:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-03-14 21:13:15,968:INFO:Soft dependency imported: xgboost: 3.2.0
+2026-03-14 21:13:15,970:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-14 21:13:16,008:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2026-03-14 21:13:16,009:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-03-14 21:13:16,031:INFO:Soft dependency imported: xgboost: 3.2.0
+2026-03-14 21:13:16,033:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-14 21:13:16,033:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2026-03-14 21:13:16,069:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-03-14 21:13:16,092:INFO:Soft dependency imported: xgboost: 3.2.0
+2026-03-14 21:13:16,094:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-14 21:13:16,129:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-03-14 21:13:16,150:INFO:Soft dependency imported: xgboost: 3.2.0
+2026-03-14 21:13:16,153:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-14 21:13:16,153:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2026-03-14 21:13:16,209:INFO:Soft dependency imported: xgboost: 3.2.0
+2026-03-14 21:13:16,211:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-14 21:13:16,268:INFO:Soft dependency imported: xgboost: 3.2.0
+2026-03-14 21:13:16,270:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-14 21:13:16,271:INFO:Preparing preprocessing pipeline...
+2026-03-14 21:13:16,272:INFO:Set up simple imputation.
+2026-03-14 21:13:16,274:INFO:Set up encoding of categorical features.
+2026-03-14 21:13:16,274:INFO:Set up imbalanced handling.
+2026-03-14 21:13:16,348:INFO:Finished creating preprocessing pipeline.
+2026-03-14 21:13:16,353:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\mateo\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['id', 'vehicle_age_years',
+                                             'mileage_km', 'engine_hours',
+                                             'last_service_km_ago',
+                                             'oil_quality_pct',
+                                             'avg_trip_length_km',
+                                             'cleanliness_score',
+                                             'driver_satisfaction_score',
+                                             'mileage_per_year', 'hours_per_km',
+                                             'servic...
+                                    transformer=OneHotEncoder(cols=['vehicle_brand',
+                                                                    'weather_exposure',
+                                                                    'fuel_type',
+                                                                    'tyre_type'],
+                                                              drop_invariant=False,
+                                                              handle_missing='return_nan',
+                                                              handle_unknown='value',
+                                                              return_df=True,
+                                                              use_cat_names=True,
+                                                              verbose=0))),
+                ('balance',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=FixImbalancer(estimator=SMOTE(k_neighbors=5,
+                                                                              random_state=123,
+                                                                              sampling_strategy='auto'))))],
+         verbose=False)
+2026-03-14 21:13:16,353:INFO:Creating final display dataframe.
+2026-03-14 21:13:16,570:INFO:Setup _display_container:                     Description                   Value
+0                    Session id                     123
+1                        Target  breakdown_next_30_days
+2                   Target type                  Binary
+3           Original data shape               (963, 28)
+4        Transformed data shape              (1409, 46)
+5   Transformed train set shape              (1120, 46)
+6    Transformed test set shape               (289, 46)
+7              Numeric features                      23
+8          Categorical features                       4
+9      Rows with missing values                   21.2%
+10                   Preprocess                    True
+11              Imputation type                  simple
+12           Numeric imputation                    mean
+13       Categorical imputation                    mode
+14     Maximum one-hot encoding                      25
+15              Encoding method                    None
+16                Fix imbalance                    True
+17         Fix imbalance method                   SMOTE
+18               Fold Generator         StratifiedKFold
+19                  Fold Number                      10
+20                     CPU Jobs                      -1
+21                      Use GPU                   False
+22               Log Experiment                   False
+23              Experiment Name        clf-default-name
+24                          USI                    8a7a
+2026-03-14 21:13:16,634:INFO:Soft dependency imported: xgboost: 3.2.0
+2026-03-14 21:13:16,636:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-14 21:13:16,692:INFO:Soft dependency imported: xgboost: 3.2.0
+2026-03-14 21:13:16,694:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-14 21:13:16,695:INFO:setup() successfully completed in 0.82s...............
+2026-03-14 21:13:16,695:INFO:Initializing create_model()
+2026-03-14 21:13:16,695:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001D2FEEA1490>, estimator=lightgbm, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-03-14 21:13:16,695:INFO:Checking exceptions
+2026-03-14 21:13:16,703:INFO:Importing libraries
+2026-03-14 21:13:16,703:INFO:Copying training dataset
+2026-03-14 21:13:16,711:INFO:Defining folds
+2026-03-14 21:13:16,711:INFO:Declaring metric variables
+2026-03-14 21:13:16,714:INFO:Importing untrained model
+2026-03-14 21:13:16,718:INFO:Light Gradient Boosting Machine Imported successfully
+2026-03-14 21:13:16,723:INFO:Starting cross validation
+2026-03-14 21:13:16,725:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2026-03-14 21:13:21,231:INFO:Calculating mean and std
+2026-03-14 21:13:21,232:INFO:Creating metrics dataframe
+2026-03-14 21:13:21,238:INFO:Finalizing model
+2026-03-14 21:13:21,318:INFO:[LightGBM] [Info] Number of positive: 560, number of negative: 560
+2026-03-14 21:13:21,320:INFO:[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.000937 seconds.
+2026-03-14 21:13:21,320:INFO:You can set `force_col_wise=true` to remove the overhead.
+2026-03-14 21:13:21,320:INFO:[LightGBM] [Info] Total Bins 5395
+2026-03-14 21:13:21,320:INFO:[LightGBM] [Info] Number of data points in the train set: 1120, number of used features: 41
+2026-03-14 21:13:21,320:INFO:[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.500000 -> initscore=0.000000
+2026-03-14 21:13:21,404:INFO:Uploading results into container
+2026-03-14 21:13:21,405:INFO:Uploading model into container now
+2026-03-14 21:13:21,414:INFO:_master_model_container: 1
+2026-03-14 21:13:21,414:INFO:_display_container: 2
+2026-03-14 21:13:21,415:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2026-03-14 21:13:21,415:INFO:create_model() successfully completed......................................
+2026-03-14 21:13:21,523:INFO:Initializing tune_model()
+2026-03-14 21:13:21,523:INFO:tune_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001D2FEEA1490>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), fold=None, round=4, n_iter=10, custom_grid=None, optimize=Recall, custom_scorer=None, search_library=scikit-learn, search_algorithm=None, early_stopping=False, early_stopping_max_iters=10, choose_better=True, fit_kwargs=None, groups=None, return_tuner=False, verbose=True, tuner_verbose=True, return_train_score=False, kwargs={})
+2026-03-14 21:13:21,524:INFO:Checking exceptions
+2026-03-14 21:13:21,539:INFO:Copying training dataset
+2026-03-14 21:13:21,544:INFO:Checking base model
+2026-03-14 21:13:21,544:INFO:Base model : Light Gradient Boosting Machine
+2026-03-14 21:13:21,547:INFO:Declaring metric variables
+2026-03-14 21:13:21,550:INFO:Defining Hyperparameters
+2026-03-14 21:13:21,630:INFO:Tuning with n_jobs=-1
+2026-03-14 21:13:21,631:INFO:Initializing RandomizedSearchCV
+2026-03-14 21:13:32,844:INFO:best_params: {'actual_estimator__reg_lambda': 0.0005, 'actual_estimator__reg_alpha': 0.2, 'actual_estimator__num_leaves': 2, 'actual_estimator__n_estimators': 30, 'actual_estimator__min_split_gain': 0, 'actual_estimator__min_child_samples': 46, 'actual_estimator__learning_rate': 0.0005, 'actual_estimator__feature_fraction': 1.0, 'actual_estimator__bagging_freq': 3, 'actual_estimator__bagging_fraction': 0.9}
+2026-03-14 21:13:32,845:INFO:Hyperparameter search completed
+2026-03-14 21:13:32,845:INFO:SubProcess create_model() called ==================================
+2026-03-14 21:13:32,846:INFO:Initializing create_model()
+2026-03-14 21:13:32,847:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001D2FEEA1490>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001D2FC903990>, model_only=True, return_train_score=False, error_score=0.0, kwargs={'reg_lambda': 0.0005, 'reg_alpha': 0.2, 'num_leaves': 2, 'n_estimators': 30, 'min_split_gain': 0, 'min_child_samples': 46, 'learning_rate': 0.0005, 'feature_fraction': 1.0, 'bagging_freq': 3, 'bagging_fraction': 0.9})
+2026-03-14 21:13:32,847:INFO:Checking exceptions
+2026-03-14 21:13:32,847:INFO:Importing libraries
+2026-03-14 21:13:32,847:INFO:Copying training dataset
+2026-03-14 21:13:32,855:INFO:Defining folds
+2026-03-14 21:13:32,855:INFO:Declaring metric variables
+2026-03-14 21:13:32,858:INFO:Importing untrained model
+2026-03-14 21:13:32,859:INFO:Declaring custom model
+2026-03-14 21:13:32,863:INFO:Light Gradient Boosting Machine Imported successfully
+2026-03-14 21:13:32,869:INFO:Starting cross validation
+2026-03-14 21:13:32,872:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2026-03-14 21:13:33,167:INFO:Calculating mean and std
+2026-03-14 21:13:33,168:INFO:Creating metrics dataframe
+2026-03-14 21:13:33,174:INFO:Finalizing model
+2026-03-14 21:13:33,250:INFO:[LightGBM] [Warning] feature_fraction is set=1.0, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=1.0
+2026-03-14 21:13:33,251:INFO:[LightGBM] [Warning] bagging_fraction is set=0.9, subsample=1.0 will be ignored. Current value: bagging_fraction=0.9
+2026-03-14 21:13:33,251:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2026-03-14 21:13:33,254:INFO:[LightGBM] [Warning] feature_fraction is set=1.0, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=1.0
+2026-03-14 21:13:33,255:INFO:[LightGBM] [Warning] bagging_fraction is set=0.9, subsample=1.0 will be ignored. Current value: bagging_fraction=0.9
+2026-03-14 21:13:33,255:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2026-03-14 21:13:33,255:INFO:[LightGBM] [Info] Number of positive: 560, number of negative: 560
+2026-03-14 21:13:33,256:INFO:[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.001180 seconds.
+2026-03-14 21:13:33,256:INFO:You can set `force_col_wise=true` to remove the overhead.
+2026-03-14 21:13:33,257:INFO:[LightGBM] [Info] Total Bins 5386
+2026-03-14 21:13:33,257:INFO:[LightGBM] [Info] Number of data points in the train set: 1120, number of used features: 40
+2026-03-14 21:13:33,257:INFO:[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.500000 -> initscore=0.000000
+2026-03-14 21:13:33,265:INFO:Uploading results into container
+2026-03-14 21:13:33,266:INFO:Uploading model into container now
+2026-03-14 21:13:33,266:INFO:_master_model_container: 2
+2026-03-14 21:13:33,266:INFO:_display_container: 3
+2026-03-14 21:13:33,267:INFO:LGBMClassifier(bagging_fraction=0.9, bagging_freq=3, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=1.0,
+               importance_type='split', learning_rate=0.0005, max_depth=-1,
+               min_child_samples=46, min_child_weight=0.001, min_split_gain=0,
+               n_estimators=30, n_jobs=-1, num_leaves=2, objective=None,
+               random_state=123, reg_alpha=0.2, reg_lambda=0.0005,
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0)
+2026-03-14 21:13:33,267:INFO:create_model() successfully completed......................................
+2026-03-14 21:13:33,374:INFO:SubProcess create_model() end ==================================
+2026-03-14 21:13:33,374:INFO:choose_better activated
+2026-03-14 21:13:33,377:INFO:SubProcess create_model() called ==================================
+2026-03-14 21:13:33,378:INFO:Initializing create_model()
+2026-03-14 21:13:33,378:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001D2FEEA1490>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-03-14 21:13:33,378:INFO:Checking exceptions
+2026-03-14 21:13:33,379:INFO:Importing libraries
+2026-03-14 21:13:33,380:INFO:Copying training dataset
+2026-03-14 21:13:33,385:INFO:Defining folds
+2026-03-14 21:13:33,385:INFO:Declaring metric variables
+2026-03-14 21:13:33,385:INFO:Importing untrained model
+2026-03-14 21:13:33,385:INFO:Declaring custom model
+2026-03-14 21:13:33,386:INFO:Light Gradient Boosting Machine Imported successfully
+2026-03-14 21:13:33,386:INFO:Starting cross validation
+2026-03-14 21:13:33,388:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2026-03-14 21:13:34,278:INFO:Calculating mean and std
+2026-03-14 21:13:34,278:INFO:Creating metrics dataframe
+2026-03-14 21:13:34,280:INFO:Finalizing model
+2026-03-14 21:13:34,363:INFO:[LightGBM] [Info] Number of positive: 560, number of negative: 560
+2026-03-14 21:13:34,364:INFO:[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.001036 seconds.
+2026-03-14 21:13:34,364:INFO:You can set `force_col_wise=true` to remove the overhead.
+2026-03-14 21:13:34,364:INFO:[LightGBM] [Info] Total Bins 5395
+2026-03-14 21:13:34,365:INFO:[LightGBM] [Info] Number of data points in the train set: 1120, number of used features: 41
+2026-03-14 21:13:34,365:INFO:[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.500000 -> initscore=0.000000
+2026-03-14 21:13:34,456:INFO:Uploading results into container
+2026-03-14 21:13:34,457:INFO:Uploading model into container now
+2026-03-14 21:13:34,457:INFO:_master_model_container: 3
+2026-03-14 21:13:34,457:INFO:_display_container: 4
+2026-03-14 21:13:34,458:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2026-03-14 21:13:34,458:INFO:create_model() successfully completed......................................
+2026-03-14 21:13:34,555:INFO:SubProcess create_model() end ==================================
+2026-03-14 21:13:34,556:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0) result for Recall is 0.0886
+2026-03-14 21:13:34,556:INFO:LGBMClassifier(bagging_fraction=0.9, bagging_freq=3, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=1.0,
+               importance_type='split', learning_rate=0.0005, max_depth=-1,
+               min_child_samples=46, min_child_weight=0.001, min_split_gain=0,
+               n_estimators=30, n_jobs=-1, num_leaves=2, objective=None,
+               random_state=123, reg_alpha=0.2, reg_lambda=0.0005,
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0) result for Recall is 0.4629
+2026-03-14 21:13:34,557:INFO:LGBMClassifier(bagging_fraction=0.9, bagging_freq=3, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=1.0,
+               importance_type='split', learning_rate=0.0005, max_depth=-1,
+               min_child_samples=46, min_child_weight=0.001, min_split_gain=0,
+               n_estimators=30, n_jobs=-1, num_leaves=2, objective=None,
+               random_state=123, reg_alpha=0.2, reg_lambda=0.0005,
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0) is best model
+2026-03-14 21:13:34,557:INFO:choose_better completed
+2026-03-14 21:13:34,563:INFO:_master_model_container: 3
+2026-03-14 21:13:34,563:INFO:_display_container: 3
+2026-03-14 21:13:34,564:INFO:LGBMClassifier(bagging_fraction=0.9, bagging_freq=3, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=1.0,
+               importance_type='split', learning_rate=0.0005, max_depth=-1,
+               min_child_samples=46, min_child_weight=0.001, min_split_gain=0,
+               n_estimators=30, n_jobs=-1, num_leaves=2, objective=None,
+               random_state=123, reg_alpha=0.2, reg_lambda=0.0005,
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0)
+2026-03-14 21:13:34,564:INFO:tune_model() successfully completed......................................
+2026-03-14 21:13:34,663:INFO:Initializing get_config()
+2026-03-14 21:13:34,663:INFO:get_config(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001D2FEEA1490>, variable=X_train)
+2026-03-14 21:13:34,663:INFO:Variable: 'X_train' used to return the transformed values in PyCaret 2.x. From PyCaret 3.x, this will return the raw values. If you need the transformed values, call get_config with 'X_train_transformed' instead.
+2026-03-14 21:13:34,672:INFO:Variable:  returned as         id vehicle_brand  vehicle_age_years     mileage_km  engine_hours  \
+795    909           BMW                5.0  148096.531250   5062.330078   
+790   1419           BMW               20.0  245058.390625   8721.515625   
+314   1061       Hyundai                5.0   37902.906250   1185.640259   
+867    634           BMW               11.0  116019.257812   3816.268311   
+528    664        Toyota               14.0   87719.226562   2868.748535   
+...    ...           ...                ...            ...           ...   
+461     85         Volvo               14.0  128560.289062   4277.809082   
+526    673          Ford                0.0  196900.234375   6828.342773   
+68    1222       Renault               15.0  134067.828125   4252.706543   
+1021   808       Renault                7.0  161609.546875   5451.585449   
+937   1479           BMW               19.0  148876.062500   5344.346680   
+
+      last_service_km_ago  oil_quality_pct  avg_trip_length_km  \
+795            205.674789        64.481750           33.539574   
+790            217.668549        72.418427           14.997455   
+314          38382.292969        53.852837           14.330807   
+867             12.701513        25.476303          192.326416   
+528           6194.751953        74.247086           12.915955   
+...                   ...              ...                 ...   
+461          20851.070312        45.621037            4.927779   
+526           6897.667969        70.209412                 NaN   
+68           29866.957031        65.332458          198.266251   
+1021          2291.765137        87.753418            8.556399   
+937           2248.003418        42.047535           66.958138   
+
+     weather_exposure fuel_type  ...  is_old_vehicle  is_high_mileage  \
+795               low    diesel  ...               0                0   
+790               low    petrol  ...               1                1   
+314               low    petrol  ...               0                0   
+867               low    diesel  ...               0                0   
+528               low    diesel  ...               0                0   
+...               ...       ...  ...             ...              ...   
+461            medium    hybrid  ...               0                0   
+526            medium    diesel  ...               0                0   
+68                low    diesel  ...               1                0   
+1021             high    petrol  ...               0                0   
+937              high    petrol  ...               1                0   
+
+     is_low_oil_quality  is_dirty  age_x_mileage  oil_x_service  log_mileage  \
+795                   0         0      59.528133       0.311996    11.905626   
+790                   0         0     248.185120       0.331179    12.409256   
+314                   0         0      52.714046       0.001403    10.542809   
+867                   1         0     128.276718       1.859379    11.661520   
+528                   0         0     159.346710       0.011984    11.381907   
+...                 ...       ...            ...            ...          ...   
+461                   0         0     164.698257       0.002188    11.764161   
+526                   0         0       0.000000       0.010177    12.190457   
+68                    0         0     177.091629       0.002187    11.806108   
+1021                  0         0      83.950615       0.038274    11.992945   
+937                   0         0     226.306641       0.018696    11.910876   
+
+      log_last_service  log_avg_trip  risk_score  
+795           5.331147      3.542106           0  
+790           5.387557      2.772430           3  
+314          10.555378      2.729864           3  
+867           2.617506      5.264380           2  
+528           8.731619      2.633036           0  
+...                ...           ...         ...  
+461           9.945209      1.779649           3  
+526           8.839084           NaN           0  
+68           10.304542      5.294642           5  
+1021          7.737514      2.257211           0  
+937           7.718243      4.218892           2  
+
+[674 rows x 27 columns]
+2026-03-14 21:13:34,673:INFO:get_config() successfully completed......................................
+2026-03-14 21:13:34,673:INFO:Initializing get_config()
+2026-03-14 21:13:34,673:INFO:get_config(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001D2FEEA1490>, variable=y_train)
+2026-03-14 21:13:34,674:INFO:Variable: 'y_train' used to return the transformed values in PyCaret 2.x. From PyCaret 3.x, this will return the raw values. If you need the transformed values, call get_config with 'y_train_transformed' instead.
+2026-03-14 21:13:34,677:INFO:Variable:  returned as 795     0
+790     1
+314     0
+867     0
+528     0
+       ..
+461     0
+526     0
+68      0
+1021    0
+937     0
+Name: breakdown_next_30_days, Length: 674, dtype: int8
+2026-03-14 21:13:34,677:INFO:get_config() successfully completed......................................
+2026-03-14 21:13:34,677:INFO:Initializing get_config()
+2026-03-14 21:13:34,677:INFO:get_config(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001D2FEEA1490>, variable=X_test)
+2026-03-14 21:13:34,677:INFO:Variable: 'X_test' used to return the transformed values in PyCaret 2.x. From PyCaret 3.x, this will return the raw values. If you need the transformed values, call get_config with 'X_test_transformed' instead.
+2026-03-14 21:13:34,685:INFO:Variable:  returned as        id vehicle_brand  vehicle_age_years     mileage_km  engine_hours  \
+623  1475           BMW                7.0   79080.679688   2637.702637   
+94   1180        Toyota                7.0  308279.906250   9837.985352   
+550   615    Volkswagen                6.0  196776.906250   6250.600586   
+647   975          Ford               10.0  343359.968750   9842.645508   
+637   141        Toyota               20.0   92928.929688   3450.510986   
+..    ...           ...                ...            ...           ...   
+565   561          Ford               19.0   61428.097656   1849.740356   
+11   1283    Volkswagen                8.0   92034.531250   2890.748047   
+924  1081        Toyota               10.0   81871.015625   2472.680664   
+668   238        Toyota                4.0  110560.187500   3475.711426   
+185   477           Kia               15.0  154997.203125   4928.783203   
+
+     last_service_km_ago  oil_quality_pct  avg_trip_length_km  \
+623         27086.728516        69.187820           30.209646   
+94           4894.726562        51.861294           19.772991   
+550         26542.619141        57.966312            2.730195   
+647           151.879745        76.192619            4.728339   
+637         28116.113281        84.868134          166.439728   
+..                   ...              ...                 ...   
+565         23537.816406        67.375999           13.692318   
+11           4632.801270        61.055832           86.167648   
+924         11300.654297        56.638775           37.130077   
+668          3615.368896        58.381729           24.678190   
+185         11218.697266        78.044548           13.073437   
+
+    weather_exposure fuel_type  ...  is_old_vehicle  is_high_mileage  \
+623           medium    petrol  ...               0                0   
+94               low    petrol  ...               0                1   
+550             high    petrol  ...               0                0   
+647              NaN    petrol  ...               0                1   
+637              low    petrol  ...               1                0   
+..               ...       ...  ...             ...              ...   
+565           medium    petrol  ...               1                0   
+11               low    diesel  ...               0                0   
+924            other    diesel  ...               0                0   
+668           medium    diesel  ...               0                0   
+185             high    petrol  ...               1                0   
+
+    is_low_oil_quality  is_dirty  age_x_mileage  oil_x_service  log_mileage  \
+623                  0         0      78.947655       0.002554    11.278236   
+94                   0         0      88.471367       0.010593    12.638766   
+550                  0         0      73.138985       0.002184    12.189831   
+647                  0         0     127.465378       0.498383    12.746537   
+637                  0         0     228.792023       0.003018    11.439601   
+..                 ...       ...            ...            ...          ...   
+565                  0         0     209.487137       0.002862    11.025639   
+11                   0         0      91.439438       0.013176    11.429930   
+924                  0         0     113.129128       0.005012    11.312913   
+668                  0         0      46.453297       0.016144    11.613324   
+185                  0         0     179.267532       0.006956    11.951169   
+
+     log_last_service  log_avg_trip  risk_score  
+623         10.206836      3.440727           3  
+94           8.496118      3.033654           1  
+550         10.186544      1.316460           3  
+647          5.029652      1.745426           1  
+637         10.244134      5.120624           5  
+..                ...           ...         ...  
+565         10.066406      2.687325           5  
+11           8.441133      4.467833           0  
+924          9.332705      3.641003           0  
+668          8.193226      3.245642           0  
+185          9.325426      2.644289           2  
+
+[289 rows x 27 columns]
+2026-03-14 21:13:34,685:INFO:get_config() successfully completed......................................
+2026-03-14 21:13:34,685:INFO:Initializing get_config()
+2026-03-14 21:13:34,685:INFO:get_config(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001D2FEEA1490>, variable=y_test)
+2026-03-14 21:13:34,686:INFO:Variable: 'y_test' used to return the transformed values in PyCaret 2.x. From PyCaret 3.x, this will return the raw values. If you need the transformed values, call get_config with 'y_test_transformed' instead.
+2026-03-14 21:13:34,687:INFO:Variable:  returned as 623    0
+94     1
+550    0
+647    0
+637    0
+      ..
+565    0
+11     0
+924    1
+668    0
+185    0
+Name: breakdown_next_30_days, Length: 289, dtype: int8
+2026-03-14 21:13:34,687:INFO:get_config() successfully completed......................................
+2026-03-14 21:13:34,687:INFO:Initializing get_config()
+2026-03-14 21:13:34,687:INFO:get_config(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001D2FEEA1490>, variable=pipeline)
+2026-03-14 21:13:34,694:INFO:Variable:  returned as Pipeline(memory=FastMemory(location=C:\Users\mateo\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['id', 'vehicle_age_years',
+                                             'mileage_km', 'engine_hours',
+                                             'last_service_km_ago',
+                                             'oil_quality_pct',
+                                             'avg_trip_length_km',
+                                             'cleanliness_score',
+                                             'driver_satisfaction_score',
+                                             'mileage_per_year', 'hours_per_km',
+                                             'servic...
+                                    transformer=OneHotEncoder(cols=['vehicle_brand',
+                                                                    'weather_exposure',
+                                                                    'fuel_type',
+                                                                    'tyre_type'],
+                                                              drop_invariant=False,
+                                                              handle_missing='return_nan',
+                                                              handle_unknown='value',
+                                                              return_df=True,
+                                                              use_cat_names=True,
+                                                              verbose=0))),
+                ('balance',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=FixImbalancer(estimator=SMOTE(k_neighbors=5,
+                                                                              random_state=123,
+                                                                              sampling_strategy='auto'))))],
+         verbose=False)
+2026-03-14 21:13:34,694:INFO:get_config() successfully completed......................................
+2026-03-14 21:18:18,637:INFO:PyCaret ClassificationExperiment
+2026-03-14 21:18:18,637:INFO:Logging name: clf-default-name
+2026-03-14 21:18:18,637:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2026-03-14 21:18:18,637:INFO:version 3.3.2
+2026-03-14 21:18:18,637:INFO:Initializing setup()
+2026-03-14 21:18:18,637:INFO:self.USI: e253
+2026-03-14 21:18:18,638:INFO:self._variable_keys: {'X_train', 'pipeline', 'fold_shuffle_param', 'html_param', '_available_plots', 'fix_imbalance', 'n_jobs_param', 'y_train', 'logging_param', 'gpu_n_jobs_param', 'log_plots_param', 'target_param', 'exp_id', 'exp_name_log', 'X', 'fold_generator', 'y', 'seed', 'X_test', 'is_multiclass', 'USI', 'data', 'y_test', 'fold_groups_param', 'gpu_param', 'memory', '_ml_usecase', 'idx'}
+2026-03-14 21:18:18,638:INFO:Checking environment
+2026-03-14 21:18:18,638:INFO:python_version: 3.11.9
+2026-03-14 21:18:18,638:INFO:python_build: ('tags/v3.11.9:de54cf5', 'Apr  2 2024 10:12:12')
+2026-03-14 21:18:18,638:INFO:machine: AMD64
+2026-03-14 21:18:18,638:INFO:platform: Windows-10-10.0.19045-SP0
+2026-03-14 21:18:18,642:INFO:Memory: svmem(total=17041727488, available=5187719168, percent=69.6, used=11854008320, free=5187719168)
+2026-03-14 21:18:18,642:INFO:Physical Core: 8
+2026-03-14 21:18:18,642:INFO:Logical Core: 16
+2026-03-14 21:18:18,642:INFO:Checking libraries
+2026-03-14 21:18:18,642:INFO:System:
+2026-03-14 21:18:18,642:INFO:    python: 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]
+2026-03-14 21:18:18,642:INFO:executable: c:\Users\mateo\Documents\AI Car Project\Team16-CarBreakdown-Project\venv\Scripts\python.exe
+2026-03-14 21:18:18,642:INFO:   machine: Windows-10-10.0.19045-SP0
+2026-03-14 21:18:18,642:INFO:PyCaret required dependencies:
+2026-03-14 21:18:18,642:INFO:                 pip: 24.0
+2026-03-14 21:18:18,642:INFO:          setuptools: 65.5.0
+2026-03-14 21:18:18,642:INFO:             pycaret: 3.3.2
+2026-03-14 21:18:18,642:INFO:             IPython: 9.10.0
+2026-03-14 21:18:18,642:INFO:          ipywidgets: 8.1.8
+2026-03-14 21:18:18,642:INFO:                tqdm: 4.67.3
+2026-03-14 21:18:18,642:INFO:               numpy: 1.26.4
+2026-03-14 21:18:18,642:INFO:              pandas: 2.1.4
+2026-03-14 21:18:18,643:INFO:              jinja2: 3.1.6
+2026-03-14 21:18:18,643:INFO:               scipy: 1.11.4
+2026-03-14 21:18:18,643:INFO:              joblib: 1.3.2
+2026-03-14 21:18:18,643:INFO:             sklearn: 1.4.2
+2026-03-14 21:18:18,643:INFO:                pyod: 2.0.7
+2026-03-14 21:18:18,643:INFO:            imblearn: 0.14.1
+2026-03-14 21:18:18,643:INFO:   category_encoders: 2.7.0
+2026-03-14 21:18:18,643:INFO:            lightgbm: 4.6.0
+2026-03-14 21:18:18,643:INFO:               numba: 0.64.0
+2026-03-14 21:18:18,643:INFO:            requests: 2.32.5
+2026-03-14 21:18:18,643:INFO:          matplotlib: 3.7.5
+2026-03-14 21:18:18,643:INFO:          scikitplot: 0.3.7
+2026-03-14 21:18:18,643:INFO:         yellowbrick: 1.5
+2026-03-14 21:18:18,643:INFO:              plotly: 6.6.0
+2026-03-14 21:18:18,643:INFO:    plotly-resampler: Not installed
+2026-03-14 21:18:18,643:INFO:             kaleido: 1.2.0
+2026-03-14 21:18:18,643:INFO:           schemdraw: 0.15
+2026-03-14 21:18:18,643:INFO:         statsmodels: 0.14.6
+2026-03-14 21:18:18,643:INFO:              sktime: 0.26.0
+2026-03-14 21:18:18,643:INFO:               tbats: 1.1.3
+2026-03-14 21:18:18,643:INFO:            pmdarima: 2.0.4
+2026-03-14 21:18:18,643:INFO:              psutil: 7.2.2
+2026-03-14 21:18:18,643:INFO:          markupsafe: 3.0.3
+2026-03-14 21:18:18,643:INFO:             pickle5: Not installed
+2026-03-14 21:18:18,643:INFO:         cloudpickle: 3.1.2
+2026-03-14 21:18:18,643:INFO:         deprecation: 2.1.0
+2026-03-14 21:18:18,644:INFO:              xxhash: 3.6.0
+2026-03-14 21:18:18,644:INFO:           wurlitzer: Not installed
+2026-03-14 21:18:18,644:INFO:PyCaret optional dependencies:
+2026-03-14 21:18:18,644:INFO:                shap: Not installed
+2026-03-14 21:18:18,644:INFO:           interpret: Not installed
+2026-03-14 21:18:18,644:INFO:                umap: Not installed
+2026-03-14 21:18:18,644:INFO:     ydata_profiling: Not installed
+2026-03-14 21:18:18,644:INFO:  explainerdashboard: Not installed
+2026-03-14 21:18:18,644:INFO:             autoviz: Not installed
+2026-03-14 21:18:18,644:INFO:           fairlearn: Not installed
+2026-03-14 21:18:18,644:INFO:          deepchecks: Not installed
+2026-03-14 21:18:18,644:INFO:             xgboost: 3.2.0
+2026-03-14 21:18:18,644:INFO:            catboost: Not installed
+2026-03-14 21:18:18,644:INFO:              kmodes: Not installed
+2026-03-14 21:18:18,644:INFO:             mlxtend: Not installed
+2026-03-14 21:18:18,644:INFO:       statsforecast: Not installed
+2026-03-14 21:18:18,644:INFO:        tune_sklearn: Not installed
+2026-03-14 21:18:18,644:INFO:                 ray: Not installed
+2026-03-14 21:18:18,645:INFO:            hyperopt: Not installed
+2026-03-14 21:18:18,645:INFO:              optuna: Not installed
+2026-03-14 21:18:18,645:INFO:               skopt: Not installed
+2026-03-14 21:18:18,645:INFO:              mlflow: Not installed
+2026-03-14 21:18:18,645:INFO:              gradio: Not installed
+2026-03-14 21:18:18,645:INFO:             fastapi: Not installed
+2026-03-14 21:18:18,645:INFO:             uvicorn: Not installed
+2026-03-14 21:18:18,645:INFO:              m2cgen: Not installed
+2026-03-14 21:18:18,645:INFO:           evidently: Not installed
+2026-03-14 21:18:18,645:INFO:               fugue: Not installed
+2026-03-14 21:18:18,645:INFO:           streamlit: Not installed
+2026-03-14 21:18:18,645:INFO:             prophet: Not installed
+2026-03-14 21:18:18,645:INFO:None
+2026-03-14 21:18:18,645:INFO:Set up data.
+2026-03-14 21:18:18,655:INFO:Set up folding strategy.
+2026-03-14 21:18:18,655:INFO:Set up train/test split.
+2026-03-14 21:18:18,661:INFO:Set up index.
+2026-03-14 21:18:18,661:INFO:Assigning column types.
+2026-03-14 21:18:18,665:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2026-03-14 21:18:18,701:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2026-03-14 21:18:18,701:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-03-14 21:18:18,723:INFO:Soft dependency imported: xgboost: 3.2.0
+2026-03-14 21:18:18,725:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-14 21:18:18,760:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2026-03-14 21:18:18,761:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-03-14 21:18:18,783:INFO:Soft dependency imported: xgboost: 3.2.0
+2026-03-14 21:18:18,785:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-14 21:18:18,785:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2026-03-14 21:18:18,820:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-03-14 21:18:18,842:INFO:Soft dependency imported: xgboost: 3.2.0
+2026-03-14 21:18:18,844:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-14 21:18:18,880:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-03-14 21:18:18,902:INFO:Soft dependency imported: xgboost: 3.2.0
+2026-03-14 21:18:18,904:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-14 21:18:18,904:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2026-03-14 21:18:18,961:INFO:Soft dependency imported: xgboost: 3.2.0
+2026-03-14 21:18:18,964:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-14 21:18:19,023:INFO:Soft dependency imported: xgboost: 3.2.0
+2026-03-14 21:18:19,025:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-14 21:18:19,026:INFO:Preparing preprocessing pipeline...
+2026-03-14 21:18:19,027:INFO:Set up simple imputation.
+2026-03-14 21:18:19,029:INFO:Set up encoding of categorical features.
+2026-03-14 21:18:19,029:INFO:Set up imbalanced handling.
+2026-03-14 21:18:19,103:INFO:Finished creating preprocessing pipeline.
+2026-03-14 21:18:19,108:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\mateo\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['id', 'vehicle_age_years',
+                                             'mileage_km', 'engine_hours',
+                                             'last_service_km_ago',
+                                             'oil_quality_pct',
+                                             'avg_trip_length_km',
+                                             'cleanliness_score',
+                                             'driver_satisfaction_score',
+                                             'mileage_per_year', 'hours_per_km',
+                                             'servic...
+                                    transformer=OneHotEncoder(cols=['vehicle_brand',
+                                                                    'weather_exposure',
+                                                                    'fuel_type',
+                                                                    'tyre_type'],
+                                                              drop_invariant=False,
+                                                              handle_missing='return_nan',
+                                                              handle_unknown='value',
+                                                              return_df=True,
+                                                              use_cat_names=True,
+                                                              verbose=0))),
+                ('balance',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=FixImbalancer(estimator=SMOTE(k_neighbors=5,
+                                                                              random_state=123,
+                                                                              sampling_strategy='auto'))))],
+         verbose=False)
+2026-03-14 21:18:19,108:INFO:Creating final display dataframe.
+2026-03-14 21:18:19,325:INFO:Setup _display_container:                     Description                   Value
+0                    Session id                     123
+1                        Target  breakdown_next_30_days
+2                   Target type                  Binary
+3           Original data shape               (963, 28)
+4        Transformed data shape              (1409, 46)
+5   Transformed train set shape              (1120, 46)
+6    Transformed test set shape               (289, 46)
+7              Numeric features                      23
+8          Categorical features                       4
+9      Rows with missing values                   21.2%
+10                   Preprocess                    True
+11              Imputation type                  simple
+12           Numeric imputation                    mean
+13       Categorical imputation                    mode
+14     Maximum one-hot encoding                      25
+15              Encoding method                    None
+16                Fix imbalance                    True
+17         Fix imbalance method                   SMOTE
+18               Fold Generator         StratifiedKFold
+19                  Fold Number                      10
+20                     CPU Jobs                      -1
+21                      Use GPU                   False
+22               Log Experiment                   False
+23              Experiment Name        clf-default-name
+24                          USI                    e253
+2026-03-14 21:18:19,392:INFO:Soft dependency imported: xgboost: 3.2.0
+2026-03-14 21:18:19,395:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-14 21:18:19,451:INFO:Soft dependency imported: xgboost: 3.2.0
+2026-03-14 21:18:19,454:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-14 21:18:19,454:INFO:setup() successfully completed in 0.82s...............
+2026-03-14 21:18:19,455:INFO:Initializing create_model()
+2026-03-14 21:18:19,455:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001D31495E990>, estimator=lightgbm, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-03-14 21:18:19,455:INFO:Checking exceptions
+2026-03-14 21:18:19,464:INFO:Importing libraries
+2026-03-14 21:18:19,464:INFO:Copying training dataset
+2026-03-14 21:18:19,474:INFO:Defining folds
+2026-03-14 21:18:19,474:INFO:Declaring metric variables
+2026-03-14 21:18:19,477:INFO:Importing untrained model
+2026-03-14 21:18:19,480:INFO:Light Gradient Boosting Machine Imported successfully
+2026-03-14 21:18:19,484:INFO:Starting cross validation
+2026-03-14 21:18:19,486:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2026-03-14 21:18:20,378:INFO:Calculating mean and std
+2026-03-14 21:18:20,378:INFO:Creating metrics dataframe
+2026-03-14 21:18:20,383:INFO:Finalizing model
+2026-03-14 21:18:20,462:INFO:[LightGBM] [Info] Number of positive: 560, number of negative: 560
+2026-03-14 21:18:20,464:INFO:[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.000911 seconds.
+2026-03-14 21:18:20,464:INFO:You can set `force_col_wise=true` to remove the overhead.
+2026-03-14 21:18:20,464:INFO:[LightGBM] [Info] Total Bins 5395
+2026-03-14 21:18:20,464:INFO:[LightGBM] [Info] Number of data points in the train set: 1120, number of used features: 41
+2026-03-14 21:18:20,465:INFO:[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.500000 -> initscore=0.000000
+2026-03-14 21:18:20,537:INFO:Uploading results into container
+2026-03-14 21:18:20,538:INFO:Uploading model into container now
+2026-03-14 21:18:20,547:INFO:_master_model_container: 1
+2026-03-14 21:18:20,547:INFO:_display_container: 2
+2026-03-14 21:18:20,548:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2026-03-14 21:18:20,548:INFO:create_model() successfully completed......................................
+2026-03-14 21:18:20,659:INFO:Initializing tune_model()
+2026-03-14 21:18:20,660:INFO:tune_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001D31495E990>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), fold=None, round=4, n_iter=10, custom_grid=None, optimize=Recall, custom_scorer=None, search_library=scikit-learn, search_algorithm=None, early_stopping=False, early_stopping_max_iters=10, choose_better=True, fit_kwargs=None, groups=None, return_tuner=False, verbose=True, tuner_verbose=True, return_train_score=False, kwargs={})
+2026-03-14 21:18:20,660:INFO:Checking exceptions
+2026-03-14 21:18:20,671:INFO:Copying training dataset
+2026-03-14 21:18:20,676:INFO:Checking base model
+2026-03-14 21:18:20,676:INFO:Base model : Light Gradient Boosting Machine
+2026-03-14 21:18:20,679:INFO:Declaring metric variables
+2026-03-14 21:18:20,682:INFO:Defining Hyperparameters
+2026-03-14 21:18:20,768:INFO:Tuning with n_jobs=-1
+2026-03-14 21:18:20,768:INFO:Initializing RandomizedSearchCV
+2026-03-14 21:18:27,362:INFO:best_params: {'actual_estimator__reg_lambda': 0.0005, 'actual_estimator__reg_alpha': 0.2, 'actual_estimator__num_leaves': 2, 'actual_estimator__n_estimators': 30, 'actual_estimator__min_split_gain': 0, 'actual_estimator__min_child_samples': 46, 'actual_estimator__learning_rate': 0.0005, 'actual_estimator__feature_fraction': 1.0, 'actual_estimator__bagging_freq': 3, 'actual_estimator__bagging_fraction': 0.9}
+2026-03-14 21:18:27,363:INFO:Hyperparameter search completed
+2026-03-14 21:18:27,363:INFO:SubProcess create_model() called ==================================
+2026-03-14 21:18:27,364:INFO:Initializing create_model()
+2026-03-14 21:18:27,365:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001D31495E990>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001D2FEEA2F10>, model_only=True, return_train_score=False, error_score=0.0, kwargs={'reg_lambda': 0.0005, 'reg_alpha': 0.2, 'num_leaves': 2, 'n_estimators': 30, 'min_split_gain': 0, 'min_child_samples': 46, 'learning_rate': 0.0005, 'feature_fraction': 1.0, 'bagging_freq': 3, 'bagging_fraction': 0.9})
+2026-03-14 21:18:27,365:INFO:Checking exceptions
+2026-03-14 21:18:27,365:INFO:Importing libraries
+2026-03-14 21:18:27,365:INFO:Copying training dataset
+2026-03-14 21:18:27,373:INFO:Defining folds
+2026-03-14 21:18:27,373:INFO:Declaring metric variables
+2026-03-14 21:18:27,376:INFO:Importing untrained model
+2026-03-14 21:18:27,376:INFO:Declaring custom model
+2026-03-14 21:18:27,381:INFO:Light Gradient Boosting Machine Imported successfully
+2026-03-14 21:18:27,386:INFO:Starting cross validation
+2026-03-14 21:18:27,388:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2026-03-14 21:18:27,656:INFO:Calculating mean and std
+2026-03-14 21:18:27,657:INFO:Creating metrics dataframe
+2026-03-14 21:18:27,663:INFO:Finalizing model
+2026-03-14 21:18:27,740:INFO:[LightGBM] [Warning] feature_fraction is set=1.0, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=1.0
+2026-03-14 21:18:27,741:INFO:[LightGBM] [Warning] bagging_fraction is set=0.9, subsample=1.0 will be ignored. Current value: bagging_fraction=0.9
+2026-03-14 21:18:27,741:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2026-03-14 21:18:27,744:INFO:[LightGBM] [Warning] feature_fraction is set=1.0, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=1.0
+2026-03-14 21:18:27,744:INFO:[LightGBM] [Warning] bagging_fraction is set=0.9, subsample=1.0 will be ignored. Current value: bagging_fraction=0.9
+2026-03-14 21:18:27,745:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2026-03-14 21:18:27,745:INFO:[LightGBM] [Info] Number of positive: 560, number of negative: 560
+2026-03-14 21:18:27,746:INFO:[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.001031 seconds.
+2026-03-14 21:18:27,746:INFO:You can set `force_col_wise=true` to remove the overhead.
+2026-03-14 21:18:27,746:INFO:[LightGBM] [Info] Total Bins 5386
+2026-03-14 21:18:27,746:INFO:[LightGBM] [Info] Number of data points in the train set: 1120, number of used features: 40
+2026-03-14 21:18:27,747:INFO:[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.500000 -> initscore=0.000000
+2026-03-14 21:18:27,755:INFO:Uploading results into container
+2026-03-14 21:18:27,755:INFO:Uploading model into container now
+2026-03-14 21:18:27,756:INFO:_master_model_container: 2
+2026-03-14 21:18:27,756:INFO:_display_container: 3
+2026-03-14 21:18:27,757:INFO:LGBMClassifier(bagging_fraction=0.9, bagging_freq=3, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=1.0,
+               importance_type='split', learning_rate=0.0005, max_depth=-1,
+               min_child_samples=46, min_child_weight=0.001, min_split_gain=0,
+               n_estimators=30, n_jobs=-1, num_leaves=2, objective=None,
+               random_state=123, reg_alpha=0.2, reg_lambda=0.0005,
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0)
+2026-03-14 21:18:27,757:INFO:create_model() successfully completed......................................
+2026-03-14 21:18:27,858:INFO:SubProcess create_model() end ==================================
+2026-03-14 21:18:27,858:INFO:choose_better activated
+2026-03-14 21:18:27,860:INFO:SubProcess create_model() called ==================================
+2026-03-14 21:18:27,861:INFO:Initializing create_model()
+2026-03-14 21:18:27,861:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001D31495E990>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-03-14 21:18:27,861:INFO:Checking exceptions
+2026-03-14 21:18:27,862:INFO:Importing libraries
+2026-03-14 21:18:27,862:INFO:Copying training dataset
+2026-03-14 21:18:27,867:INFO:Defining folds
+2026-03-14 21:18:27,867:INFO:Declaring metric variables
+2026-03-14 21:18:27,868:INFO:Importing untrained model
+2026-03-14 21:18:27,868:INFO:Declaring custom model
+2026-03-14 21:18:27,868:INFO:Light Gradient Boosting Machine Imported successfully
+2026-03-14 21:18:27,869:INFO:Starting cross validation
+2026-03-14 21:18:27,870:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2026-03-14 21:18:28,771:INFO:Calculating mean and std
+2026-03-14 21:18:28,771:INFO:Creating metrics dataframe
+2026-03-14 21:18:28,773:INFO:Finalizing model
+2026-03-14 21:18:28,851:INFO:[LightGBM] [Info] Number of positive: 560, number of negative: 560
+2026-03-14 21:18:28,853:INFO:[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.001050 seconds.
+2026-03-14 21:18:28,853:INFO:You can set `force_col_wise=true` to remove the overhead.
+2026-03-14 21:18:28,853:INFO:[LightGBM] [Info] Total Bins 5395
+2026-03-14 21:18:28,853:INFO:[LightGBM] [Info] Number of data points in the train set: 1120, number of used features: 41
+2026-03-14 21:18:28,853:INFO:[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.500000 -> initscore=0.000000
+2026-03-14 21:18:28,932:INFO:Uploading results into container
+2026-03-14 21:18:28,933:INFO:Uploading model into container now
+2026-03-14 21:18:28,933:INFO:_master_model_container: 3
+2026-03-14 21:18:28,933:INFO:_display_container: 4
+2026-03-14 21:18:28,934:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2026-03-14 21:18:28,934:INFO:create_model() successfully completed......................................
+2026-03-14 21:18:29,043:INFO:SubProcess create_model() end ==================================
+2026-03-14 21:18:29,044:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0) result for Recall is 0.0886
+2026-03-14 21:18:29,044:INFO:LGBMClassifier(bagging_fraction=0.9, bagging_freq=3, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=1.0,
+               importance_type='split', learning_rate=0.0005, max_depth=-1,
+               min_child_samples=46, min_child_weight=0.001, min_split_gain=0,
+               n_estimators=30, n_jobs=-1, num_leaves=2, objective=None,
+               random_state=123, reg_alpha=0.2, reg_lambda=0.0005,
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0) result for Recall is 0.4629
+2026-03-14 21:18:29,045:INFO:LGBMClassifier(bagging_fraction=0.9, bagging_freq=3, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=1.0,
+               importance_type='split', learning_rate=0.0005, max_depth=-1,
+               min_child_samples=46, min_child_weight=0.001, min_split_gain=0,
+               n_estimators=30, n_jobs=-1, num_leaves=2, objective=None,
+               random_state=123, reg_alpha=0.2, reg_lambda=0.0005,
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0) is best model
+2026-03-14 21:18:29,045:INFO:choose_better completed
+2026-03-14 21:18:29,051:INFO:_master_model_container: 3
+2026-03-14 21:18:29,051:INFO:_display_container: 3
+2026-03-14 21:18:29,052:INFO:LGBMClassifier(bagging_fraction=0.9, bagging_freq=3, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=1.0,
+               importance_type='split', learning_rate=0.0005, max_depth=-1,
+               min_child_samples=46, min_child_weight=0.001, min_split_gain=0,
+               n_estimators=30, n_jobs=-1, num_leaves=2, objective=None,
+               random_state=123, reg_alpha=0.2, reg_lambda=0.0005,
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0)
+2026-03-14 21:18:29,052:INFO:tune_model() successfully completed......................................
+2026-03-14 21:18:29,125:INFO:Initializing get_config()
+2026-03-14 21:18:29,126:INFO:get_config(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001D31495E990>, variable=X_train)
+2026-03-14 21:18:29,126:INFO:Variable: 'X_train' used to return the transformed values in PyCaret 2.x. From PyCaret 3.x, this will return the raw values. If you need the transformed values, call get_config with 'X_train_transformed' instead.
+2026-03-14 21:18:29,133:INFO:Variable:  returned as         id vehicle_brand  vehicle_age_years     mileage_km  engine_hours  \
+795    909           BMW                5.0  148096.531250   5062.330078   
+790   1419           BMW               20.0  245058.390625   8721.515625   
+314   1061       Hyundai                5.0   37902.906250   1185.640259   
+867    634           BMW               11.0  116019.257812   3816.268311   
+528    664        Toyota               14.0   87719.226562   2868.748535   
+...    ...           ...                ...            ...           ...   
+461     85         Volvo               14.0  128560.289062   4277.809082   
+526    673          Ford                0.0  196900.234375   6828.342773   
+68    1222       Renault               15.0  134067.828125   4252.706543   
+1021   808       Renault                7.0  161609.546875   5451.585449   
+937   1479           BMW               19.0  148876.062500   5344.346680   
+
+      last_service_km_ago  oil_quality_pct  avg_trip_length_km  \
+795            205.674789        64.481750           33.539574   
+790            217.668549        72.418427           14.997455   
+314          38382.292969        53.852837           14.330807   
+867             12.701513        25.476303          192.326416   
+528           6194.751953        74.247086           12.915955   
+...                   ...              ...                 ...   
+461          20851.070312        45.621037            4.927779   
+526           6897.667969        70.209412                 NaN   
+68           29866.957031        65.332458          198.266251   
+1021          2291.765137        87.753418            8.556399   
+937           2248.003418        42.047535           66.958138   
+
+     weather_exposure fuel_type  ...  is_old_vehicle  is_high_mileage  \
+795               low    diesel  ...               0                0   
+790               low    petrol  ...               1                1   
+314               low    petrol  ...               0                0   
+867               low    diesel  ...               0                0   
+528               low    diesel  ...               0                0   
+...               ...       ...  ...             ...              ...   
+461            medium    hybrid  ...               0                0   
+526            medium    diesel  ...               0                0   
+68                low    diesel  ...               1                0   
+1021             high    petrol  ...               0                0   
+937              high    petrol  ...               1                0   
+
+     is_low_oil_quality  is_dirty  age_x_mileage  oil_x_service  log_mileage  \
+795                   0         0      59.528133       0.311996    11.905626   
+790                   0         0     248.185120       0.331179    12.409256   
+314                   0         0      52.714046       0.001403    10.542809   
+867                   1         0     128.276718       1.859379    11.661520   
+528                   0         0     159.346710       0.011984    11.381907   
+...                 ...       ...            ...            ...          ...   
+461                   0         0     164.698257       0.002188    11.764161   
+526                   0         0       0.000000       0.010177    12.190457   
+68                    0         0     177.091629       0.002187    11.806108   
+1021                  0         0      83.950615       0.038274    11.992945   
+937                   0         0     226.306641       0.018696    11.910876   
+
+      log_last_service  log_avg_trip  risk_score  
+795           5.331147      3.542106           0  
+790           5.387557      2.772430           3  
+314          10.555378      2.729864           3  
+867           2.617506      5.264380           2  
+528           8.731619      2.633036           0  
+...                ...           ...         ...  
+461           9.945209      1.779649           3  
+526           8.839084           NaN           0  
+68           10.304542      5.294642           5  
+1021          7.737514      2.257211           0  
+937           7.718243      4.218892           2  
+
+[674 rows x 27 columns]
+2026-03-14 21:18:29,133:INFO:get_config() successfully completed......................................
+2026-03-14 21:18:29,134:INFO:Initializing get_config()
+2026-03-14 21:18:29,134:INFO:get_config(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001D31495E990>, variable=y_train)
+2026-03-14 21:18:29,134:INFO:Variable: 'y_train' used to return the transformed values in PyCaret 2.x. From PyCaret 3.x, this will return the raw values. If you need the transformed values, call get_config with 'y_train_transformed' instead.
+2026-03-14 21:18:29,135:INFO:Variable:  returned as 795     0
+790     1
+314     0
+867     0
+528     0
+       ..
+461     0
+526     0
+68      0
+1021    0
+937     0
+Name: breakdown_next_30_days, Length: 674, dtype: int8
+2026-03-14 21:18:29,135:INFO:get_config() successfully completed......................................
+2026-03-14 21:18:29,135:INFO:Initializing get_config()
+2026-03-14 21:18:29,135:INFO:get_config(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001D31495E990>, variable=X_test)
+2026-03-14 21:18:29,136:INFO:Variable: 'X_test' used to return the transformed values in PyCaret 2.x. From PyCaret 3.x, this will return the raw values. If you need the transformed values, call get_config with 'X_test_transformed' instead.
+2026-03-14 21:18:29,143:INFO:Variable:  returned as        id vehicle_brand  vehicle_age_years     mileage_km  engine_hours  \
+623  1475           BMW                7.0   79080.679688   2637.702637   
+94   1180        Toyota                7.0  308279.906250   9837.985352   
+550   615    Volkswagen                6.0  196776.906250   6250.600586   
+647   975          Ford               10.0  343359.968750   9842.645508   
+637   141        Toyota               20.0   92928.929688   3450.510986   
+..    ...           ...                ...            ...           ...   
+565   561          Ford               19.0   61428.097656   1849.740356   
+11   1283    Volkswagen                8.0   92034.531250   2890.748047   
+924  1081        Toyota               10.0   81871.015625   2472.680664   
+668   238        Toyota                4.0  110560.187500   3475.711426   
+185   477           Kia               15.0  154997.203125   4928.783203   
+
+     last_service_km_ago  oil_quality_pct  avg_trip_length_km  \
+623         27086.728516        69.187820           30.209646   
+94           4894.726562        51.861294           19.772991   
+550         26542.619141        57.966312            2.730195   
+647           151.879745        76.192619            4.728339   
+637         28116.113281        84.868134          166.439728   
+..                   ...              ...                 ...   
+565         23537.816406        67.375999           13.692318   
+11           4632.801270        61.055832           86.167648   
+924         11300.654297        56.638775           37.130077   
+668          3615.368896        58.381729           24.678190   
+185         11218.697266        78.044548           13.073437   
+
+    weather_exposure fuel_type  ...  is_old_vehicle  is_high_mileage  \
+623           medium    petrol  ...               0                0   
+94               low    petrol  ...               0                1   
+550             high    petrol  ...               0                0   
+647              NaN    petrol  ...               0                1   
+637              low    petrol  ...               1                0   
+..               ...       ...  ...             ...              ...   
+565           medium    petrol  ...               1                0   
+11               low    diesel  ...               0                0   
+924            other    diesel  ...               0                0   
+668           medium    diesel  ...               0                0   
+185             high    petrol  ...               1                0   
+
+    is_low_oil_quality  is_dirty  age_x_mileage  oil_x_service  log_mileage  \
+623                  0         0      78.947655       0.002554    11.278236   
+94                   0         0      88.471367       0.010593    12.638766   
+550                  0         0      73.138985       0.002184    12.189831   
+647                  0         0     127.465378       0.498383    12.746537   
+637                  0         0     228.792023       0.003018    11.439601   
+..                 ...       ...            ...            ...          ...   
+565                  0         0     209.487137       0.002862    11.025639   
+11                   0         0      91.439438       0.013176    11.429930   
+924                  0         0     113.129128       0.005012    11.312913   
+668                  0         0      46.453297       0.016144    11.613324   
+185                  0         0     179.267532       0.006956    11.951169   
+
+     log_last_service  log_avg_trip  risk_score  
+623         10.206836      3.440727           3  
+94           8.496118      3.033654           1  
+550         10.186544      1.316460           3  
+647          5.029652      1.745426           1  
+637         10.244134      5.120624           5  
+..                ...           ...         ...  
+565         10.066406      2.687325           5  
+11           8.441133      4.467833           0  
+924          9.332705      3.641003           0  
+668          8.193226      3.245642           0  
+185          9.325426      2.644289           2  
+
+[289 rows x 27 columns]
+2026-03-14 21:18:29,143:INFO:get_config() successfully completed......................................
+2026-03-14 21:18:29,143:INFO:Initializing get_config()
+2026-03-14 21:18:29,143:INFO:get_config(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001D31495E990>, variable=y_test)
+2026-03-14 21:18:29,143:INFO:Variable: 'y_test' used to return the transformed values in PyCaret 2.x. From PyCaret 3.x, this will return the raw values. If you need the transformed values, call get_config with 'y_test_transformed' instead.
+2026-03-14 21:18:29,145:INFO:Variable:  returned as 623    0
+94     1
+550    0
+647    0
+637    0
+      ..
+565    0
+11     0
+924    1
+668    0
+185    0
+Name: breakdown_next_30_days, Length: 289, dtype: int8
+2026-03-14 21:18:29,145:INFO:get_config() successfully completed......................................
+2026-03-14 21:18:29,145:INFO:Initializing get_config()
+2026-03-14 21:18:29,145:INFO:get_config(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001D31495E990>, variable=pipeline)
+2026-03-14 21:18:29,150:INFO:Variable:  returned as Pipeline(memory=FastMemory(location=C:\Users\mateo\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['id', 'vehicle_age_years',
+                                             'mileage_km', 'engine_hours',
+                                             'last_service_km_ago',
+                                             'oil_quality_pct',
+                                             'avg_trip_length_km',
+                                             'cleanliness_score',
+                                             'driver_satisfaction_score',
+                                             'mileage_per_year', 'hours_per_km',
+                                             'servic...
+                                    transformer=OneHotEncoder(cols=['vehicle_brand',
+                                                                    'weather_exposure',
+                                                                    'fuel_type',
+                                                                    'tyre_type'],
+                                                              drop_invariant=False,
+                                                              handle_missing='return_nan',
+                                                              handle_unknown='value',
+                                                              return_df=True,
+                                                              use_cat_names=True,
+                                                              verbose=0))),
+                ('balance',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=FixImbalancer(estimator=SMOTE(k_neighbors=5,
+                                                                              random_state=123,
+                                                                              sampling_strategy='auto'))))],
+         verbose=False)
+2026-03-14 21:18:29,150:INFO:get_config() successfully completed......................................
+2026-03-14 21:18:53,627:INFO:PyCaret ClassificationExperiment
+2026-03-14 21:18:53,628:INFO:Logging name: clf-default-name
+2026-03-14 21:18:53,628:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2026-03-14 21:18:53,628:INFO:version 3.3.2
+2026-03-14 21:18:53,628:INFO:Initializing setup()
+2026-03-14 21:18:53,628:INFO:self.USI: 5485
+2026-03-14 21:18:53,628:INFO:self._variable_keys: {'X_train', 'pipeline', 'fold_shuffle_param', 'html_param', '_available_plots', 'fix_imbalance', 'n_jobs_param', 'y_train', 'logging_param', 'gpu_n_jobs_param', 'log_plots_param', 'target_param', 'exp_id', 'exp_name_log', 'X', 'fold_generator', 'y', 'seed', 'X_test', 'is_multiclass', 'USI', 'data', 'y_test', 'fold_groups_param', 'gpu_param', 'memory', '_ml_usecase', 'idx'}
+2026-03-14 21:18:53,628:INFO:Checking environment
+2026-03-14 21:18:53,628:INFO:python_version: 3.11.9
+2026-03-14 21:18:53,628:INFO:python_build: ('tags/v3.11.9:de54cf5', 'Apr  2 2024 10:12:12')
+2026-03-14 21:18:53,628:INFO:machine: AMD64
+2026-03-14 21:18:53,628:INFO:platform: Windows-10-10.0.19045-SP0
+2026-03-14 21:18:53,632:INFO:Memory: svmem(total=17041727488, available=5179113472, percent=69.6, used=11862614016, free=5179113472)
+2026-03-14 21:18:53,632:INFO:Physical Core: 8
+2026-03-14 21:18:53,632:INFO:Logical Core: 16
+2026-03-14 21:18:53,632:INFO:Checking libraries
+2026-03-14 21:18:53,632:INFO:System:
+2026-03-14 21:18:53,632:INFO:    python: 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]
+2026-03-14 21:18:53,632:INFO:executable: c:\Users\mateo\Documents\AI Car Project\Team16-CarBreakdown-Project\venv\Scripts\python.exe
+2026-03-14 21:18:53,632:INFO:   machine: Windows-10-10.0.19045-SP0
+2026-03-14 21:18:53,632:INFO:PyCaret required dependencies:
+2026-03-14 21:18:53,632:INFO:                 pip: 24.0
+2026-03-14 21:18:53,632:INFO:          setuptools: 65.5.0
+2026-03-14 21:18:53,632:INFO:             pycaret: 3.3.2
+2026-03-14 21:18:53,632:INFO:             IPython: 9.10.0
+2026-03-14 21:18:53,632:INFO:          ipywidgets: 8.1.8
+2026-03-14 21:18:53,632:INFO:                tqdm: 4.67.3
+2026-03-14 21:18:53,632:INFO:               numpy: 1.26.4
+2026-03-14 21:18:53,632:INFO:              pandas: 2.1.4
+2026-03-14 21:18:53,632:INFO:              jinja2: 3.1.6
+2026-03-14 21:18:53,632:INFO:               scipy: 1.11.4
+2026-03-14 21:18:53,632:INFO:              joblib: 1.3.2
+2026-03-14 21:18:53,632:INFO:             sklearn: 1.4.2
+2026-03-14 21:18:53,632:INFO:                pyod: 2.0.7
+2026-03-14 21:18:53,632:INFO:            imblearn: 0.14.1
+2026-03-14 21:18:53,632:INFO:   category_encoders: 2.7.0
+2026-03-14 21:18:53,633:INFO:            lightgbm: 4.6.0
+2026-03-14 21:18:53,633:INFO:               numba: 0.64.0
+2026-03-14 21:18:53,633:INFO:            requests: 2.32.5
+2026-03-14 21:18:53,633:INFO:          matplotlib: 3.7.5
+2026-03-14 21:18:53,633:INFO:          scikitplot: 0.3.7
+2026-03-14 21:18:53,633:INFO:         yellowbrick: 1.5
+2026-03-14 21:18:53,633:INFO:              plotly: 6.6.0
+2026-03-14 21:18:53,633:INFO:    plotly-resampler: Not installed
+2026-03-14 21:18:53,633:INFO:             kaleido: 1.2.0
+2026-03-14 21:18:53,633:INFO:           schemdraw: 0.15
+2026-03-14 21:18:53,633:INFO:         statsmodels: 0.14.6
+2026-03-14 21:18:53,633:INFO:              sktime: 0.26.0
+2026-03-14 21:18:53,633:INFO:               tbats: 1.1.3
+2026-03-14 21:18:53,633:INFO:            pmdarima: 2.0.4
+2026-03-14 21:18:53,633:INFO:              psutil: 7.2.2
+2026-03-14 21:18:53,633:INFO:          markupsafe: 3.0.3
+2026-03-14 21:18:53,633:INFO:             pickle5: Not installed
+2026-03-14 21:18:53,633:INFO:         cloudpickle: 3.1.2
+2026-03-14 21:18:53,633:INFO:         deprecation: 2.1.0
+2026-03-14 21:18:53,633:INFO:              xxhash: 3.6.0
+2026-03-14 21:18:53,633:INFO:           wurlitzer: Not installed
+2026-03-14 21:18:53,633:INFO:PyCaret optional dependencies:
+2026-03-14 21:18:53,633:INFO:                shap: Not installed
+2026-03-14 21:18:53,633:INFO:           interpret: Not installed
+2026-03-14 21:18:53,633:INFO:                umap: Not installed
+2026-03-14 21:18:53,633:INFO:     ydata_profiling: Not installed
+2026-03-14 21:18:53,633:INFO:  explainerdashboard: Not installed
+2026-03-14 21:18:53,633:INFO:             autoviz: Not installed
+2026-03-14 21:18:53,634:INFO:           fairlearn: Not installed
+2026-03-14 21:18:53,634:INFO:          deepchecks: Not installed
+2026-03-14 21:18:53,634:INFO:             xgboost: 3.2.0
+2026-03-14 21:18:53,634:INFO:            catboost: Not installed
+2026-03-14 21:18:53,634:INFO:              kmodes: Not installed
+2026-03-14 21:18:53,634:INFO:             mlxtend: Not installed
+2026-03-14 21:18:53,634:INFO:       statsforecast: Not installed
+2026-03-14 21:18:53,634:INFO:        tune_sklearn: Not installed
+2026-03-14 21:18:53,634:INFO:                 ray: Not installed
+2026-03-14 21:18:53,634:INFO:            hyperopt: Not installed
+2026-03-14 21:18:53,634:INFO:              optuna: Not installed
+2026-03-14 21:18:53,634:INFO:               skopt: Not installed
+2026-03-14 21:18:53,634:INFO:              mlflow: Not installed
+2026-03-14 21:18:53,634:INFO:              gradio: Not installed
+2026-03-14 21:18:53,634:INFO:             fastapi: Not installed
+2026-03-14 21:18:53,634:INFO:             uvicorn: Not installed
+2026-03-14 21:18:53,634:INFO:              m2cgen: Not installed
+2026-03-14 21:18:53,634:INFO:           evidently: Not installed
+2026-03-14 21:18:53,634:INFO:               fugue: Not installed
+2026-03-14 21:18:53,634:INFO:           streamlit: Not installed
+2026-03-14 21:18:53,634:INFO:             prophet: Not installed
+2026-03-14 21:18:53,634:INFO:None
+2026-03-14 21:18:53,634:INFO:Set up data.
+2026-03-14 21:18:53,643:INFO:Set up folding strategy.
+2026-03-14 21:18:53,643:INFO:Set up train/test split.
+2026-03-14 21:18:53,648:INFO:Set up index.
+2026-03-14 21:18:53,648:INFO:Assigning column types.
+2026-03-14 21:18:53,652:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2026-03-14 21:18:53,688:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2026-03-14 21:18:53,688:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-03-14 21:18:53,711:INFO:Soft dependency imported: xgboost: 3.2.0
+2026-03-14 21:18:53,713:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-14 21:18:53,747:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2026-03-14 21:18:53,748:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-03-14 21:18:53,770:INFO:Soft dependency imported: xgboost: 3.2.0
+2026-03-14 21:18:53,773:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-14 21:18:53,773:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2026-03-14 21:18:53,808:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-03-14 21:18:53,830:INFO:Soft dependency imported: xgboost: 3.2.0
+2026-03-14 21:18:53,832:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-14 21:18:53,868:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-03-14 21:18:53,890:INFO:Soft dependency imported: xgboost: 3.2.0
+2026-03-14 21:18:53,892:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-14 21:18:53,893:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2026-03-14 21:18:53,950:INFO:Soft dependency imported: xgboost: 3.2.0
+2026-03-14 21:18:53,952:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-14 21:18:54,011:INFO:Soft dependency imported: xgboost: 3.2.0
+2026-03-14 21:18:54,013:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-14 21:18:54,014:INFO:Preparing preprocessing pipeline...
+2026-03-14 21:18:54,015:INFO:Set up simple imputation.
+2026-03-14 21:18:54,017:INFO:Set up encoding of categorical features.
+2026-03-14 21:18:54,017:INFO:Set up imbalanced handling.
+2026-03-14 21:18:54,089:INFO:Finished creating preprocessing pipeline.
+2026-03-14 21:18:54,094:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\mateo\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['id', 'vehicle_age_years',
+                                             'mileage_km', 'engine_hours',
+                                             'last_service_km_ago',
+                                             'oil_quality_pct',
+                                             'avg_trip_length_km',
+                                             'cleanliness_score',
+                                             'driver_satisfaction_score',
+                                             'mileage_per_year', 'hours_per_km',
+                                             'servic...
+                                    transformer=OneHotEncoder(cols=['vehicle_brand',
+                                                                    'weather_exposure',
+                                                                    'fuel_type',
+                                                                    'tyre_type'],
+                                                              drop_invariant=False,
+                                                              handle_missing='return_nan',
+                                                              handle_unknown='value',
+                                                              return_df=True,
+                                                              use_cat_names=True,
+                                                              verbose=0))),
+                ('balance',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=FixImbalancer(estimator=SMOTE(k_neighbors=5,
+                                                                              random_state=123,
+                                                                              sampling_strategy='auto'))))],
+         verbose=False)
+2026-03-14 21:18:54,094:INFO:Creating final display dataframe.
+2026-03-14 21:18:54,304:INFO:Setup _display_container:                     Description                   Value
+0                    Session id                     123
+1                        Target  breakdown_next_30_days
+2                   Target type                  Binary
+3           Original data shape               (963, 28)
+4        Transformed data shape              (1409, 46)
+5   Transformed train set shape              (1120, 46)
+6    Transformed test set shape               (289, 46)
+7              Numeric features                      23
+8          Categorical features                       4
+9      Rows with missing values                   21.2%
+10                   Preprocess                    True
+11              Imputation type                  simple
+12           Numeric imputation                    mean
+13       Categorical imputation                    mode
+14     Maximum one-hot encoding                      25
+15              Encoding method                    None
+16                Fix imbalance                    True
+17         Fix imbalance method                   SMOTE
+18               Fold Generator         StratifiedKFold
+19                  Fold Number                      10
+20                     CPU Jobs                      -1
+21                      Use GPU                   False
+22               Log Experiment                   False
+23              Experiment Name        clf-default-name
+24                          USI                    5485
+2026-03-14 21:18:54,365:INFO:Soft dependency imported: xgboost: 3.2.0
+2026-03-14 21:18:54,367:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-14 21:18:54,425:INFO:Soft dependency imported: xgboost: 3.2.0
+2026-03-14 21:18:54,427:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-14 21:18:54,428:INFO:setup() successfully completed in 0.8s...............
+2026-03-14 21:18:54,428:INFO:Initializing create_model()
+2026-03-14 21:18:54,428:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001D316C0AB10>, estimator=lightgbm, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-03-14 21:18:54,428:INFO:Checking exceptions
+2026-03-14 21:18:54,436:INFO:Importing libraries
+2026-03-14 21:18:54,436:INFO:Copying training dataset
+2026-03-14 21:18:54,443:INFO:Defining folds
+2026-03-14 21:18:54,443:INFO:Declaring metric variables
+2026-03-14 21:18:54,446:INFO:Importing untrained model
+2026-03-14 21:18:54,449:INFO:Light Gradient Boosting Machine Imported successfully
+2026-03-14 21:18:54,457:INFO:Starting cross validation
+2026-03-14 21:18:54,459:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2026-03-14 21:18:55,393:INFO:Calculating mean and std
+2026-03-14 21:18:55,393:INFO:Creating metrics dataframe
+2026-03-14 21:18:55,398:INFO:Finalizing model
+2026-03-14 21:18:55,479:INFO:[LightGBM] [Info] Number of positive: 560, number of negative: 560
+2026-03-14 21:18:55,480:INFO:[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.000964 seconds.
+2026-03-14 21:18:55,480:INFO:You can set `force_col_wise=true` to remove the overhead.
+2026-03-14 21:18:55,480:INFO:[LightGBM] [Info] Total Bins 5395
+2026-03-14 21:18:55,481:INFO:[LightGBM] [Info] Number of data points in the train set: 1120, number of used features: 41
+2026-03-14 21:18:55,481:INFO:[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.500000 -> initscore=0.000000
+2026-03-14 21:18:55,553:INFO:Uploading results into container
+2026-03-14 21:18:55,554:INFO:Uploading model into container now
+2026-03-14 21:18:55,563:INFO:_master_model_container: 1
+2026-03-14 21:18:55,563:INFO:_display_container: 2
+2026-03-14 21:18:55,564:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2026-03-14 21:18:55,564:INFO:create_model() successfully completed......................................
+2026-03-14 21:18:55,666:INFO:Initializing tune_model()
+2026-03-14 21:18:55,666:INFO:tune_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001D316C0AB10>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), fold=None, round=4, n_iter=10, custom_grid=None, optimize=Recall, custom_scorer=None, search_library=scikit-learn, search_algorithm=None, early_stopping=False, early_stopping_max_iters=10, choose_better=True, fit_kwargs=None, groups=None, return_tuner=False, verbose=True, tuner_verbose=True, return_train_score=False, kwargs={})
+2026-03-14 21:18:55,666:INFO:Checking exceptions
+2026-03-14 21:18:55,678:INFO:Copying training dataset
+2026-03-14 21:18:55,683:INFO:Checking base model
+2026-03-14 21:18:55,683:INFO:Base model : Light Gradient Boosting Machine
+2026-03-14 21:18:55,686:INFO:Declaring metric variables
+2026-03-14 21:18:55,688:INFO:Defining Hyperparameters
+2026-03-14 21:18:55,769:INFO:Tuning with n_jobs=-1
+2026-03-14 21:18:55,769:INFO:Initializing RandomizedSearchCV
+2026-03-14 21:19:02,397:INFO:best_params: {'actual_estimator__reg_lambda': 0.0005, 'actual_estimator__reg_alpha': 0.2, 'actual_estimator__num_leaves': 2, 'actual_estimator__n_estimators': 30, 'actual_estimator__min_split_gain': 0, 'actual_estimator__min_child_samples': 46, 'actual_estimator__learning_rate': 0.0005, 'actual_estimator__feature_fraction': 1.0, 'actual_estimator__bagging_freq': 3, 'actual_estimator__bagging_fraction': 0.9}
+2026-03-14 21:19:02,398:INFO:Hyperparameter search completed
+2026-03-14 21:19:02,398:INFO:SubProcess create_model() called ==================================
+2026-03-14 21:19:02,399:INFO:Initializing create_model()
+2026-03-14 21:19:02,400:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001D316C0AB10>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001D2FC454BD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={'reg_lambda': 0.0005, 'reg_alpha': 0.2, 'num_leaves': 2, 'n_estimators': 30, 'min_split_gain': 0, 'min_child_samples': 46, 'learning_rate': 0.0005, 'feature_fraction': 1.0, 'bagging_freq': 3, 'bagging_fraction': 0.9})
+2026-03-14 21:19:02,400:INFO:Checking exceptions
+2026-03-14 21:19:02,400:INFO:Importing libraries
+2026-03-14 21:19:02,400:INFO:Copying training dataset
+2026-03-14 21:19:02,408:INFO:Defining folds
+2026-03-14 21:19:02,408:INFO:Declaring metric variables
+2026-03-14 21:19:02,411:INFO:Importing untrained model
+2026-03-14 21:19:02,411:INFO:Declaring custom model
+2026-03-14 21:19:02,416:INFO:Light Gradient Boosting Machine Imported successfully
+2026-03-14 21:19:02,422:INFO:Starting cross validation
+2026-03-14 21:19:02,424:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2026-03-14 21:19:02,741:INFO:Calculating mean and std
+2026-03-14 21:19:02,742:INFO:Creating metrics dataframe
+2026-03-14 21:19:02,747:INFO:Finalizing model
+2026-03-14 21:19:02,827:INFO:[LightGBM] [Warning] feature_fraction is set=1.0, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=1.0
+2026-03-14 21:19:02,827:INFO:[LightGBM] [Warning] bagging_fraction is set=0.9, subsample=1.0 will be ignored. Current value: bagging_fraction=0.9
+2026-03-14 21:19:02,827:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2026-03-14 21:19:02,831:INFO:[LightGBM] [Warning] feature_fraction is set=1.0, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=1.0
+2026-03-14 21:19:02,831:INFO:[LightGBM] [Warning] bagging_fraction is set=0.9, subsample=1.0 will be ignored. Current value: bagging_fraction=0.9
+2026-03-14 21:19:02,831:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2026-03-14 21:19:02,831:INFO:[LightGBM] [Info] Number of positive: 560, number of negative: 560
+2026-03-14 21:19:02,832:INFO:[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.001102 seconds.
+2026-03-14 21:19:02,832:INFO:You can set `force_col_wise=true` to remove the overhead.
+2026-03-14 21:19:02,833:INFO:[LightGBM] [Info] Total Bins 5386
+2026-03-14 21:19:02,833:INFO:[LightGBM] [Info] Number of data points in the train set: 1120, number of used features: 40
+2026-03-14 21:19:02,833:INFO:[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.500000 -> initscore=0.000000
+2026-03-14 21:19:02,841:INFO:Uploading results into container
+2026-03-14 21:19:02,842:INFO:Uploading model into container now
+2026-03-14 21:19:02,842:INFO:_master_model_container: 2
+2026-03-14 21:19:02,842:INFO:_display_container: 3
+2026-03-14 21:19:02,843:INFO:LGBMClassifier(bagging_fraction=0.9, bagging_freq=3, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=1.0,
+               importance_type='split', learning_rate=0.0005, max_depth=-1,
+               min_child_samples=46, min_child_weight=0.001, min_split_gain=0,
+               n_estimators=30, n_jobs=-1, num_leaves=2, objective=None,
+               random_state=123, reg_alpha=0.2, reg_lambda=0.0005,
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0)
+2026-03-14 21:19:02,843:INFO:create_model() successfully completed......................................
+2026-03-14 21:19:02,943:INFO:SubProcess create_model() end ==================================
+2026-03-14 21:19:02,943:INFO:choose_better activated
+2026-03-14 21:19:02,945:INFO:SubProcess create_model() called ==================================
+2026-03-14 21:19:02,946:INFO:Initializing create_model()
+2026-03-14 21:19:02,946:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001D316C0AB10>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-03-14 21:19:02,946:INFO:Checking exceptions
+2026-03-14 21:19:02,948:INFO:Importing libraries
+2026-03-14 21:19:02,948:INFO:Copying training dataset
+2026-03-14 21:19:02,952:INFO:Defining folds
+2026-03-14 21:19:02,953:INFO:Declaring metric variables
+2026-03-14 21:19:02,953:INFO:Importing untrained model
+2026-03-14 21:19:02,953:INFO:Declaring custom model
+2026-03-14 21:19:02,953:INFO:Light Gradient Boosting Machine Imported successfully
+2026-03-14 21:19:02,954:INFO:Starting cross validation
+2026-03-14 21:19:02,955:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2026-03-14 21:19:03,796:INFO:Calculating mean and std
+2026-03-14 21:19:03,796:INFO:Creating metrics dataframe
+2026-03-14 21:19:03,798:INFO:Finalizing model
+2026-03-14 21:19:03,880:INFO:[LightGBM] [Info] Number of positive: 560, number of negative: 560
+2026-03-14 21:19:03,882:INFO:[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.000984 seconds.
+2026-03-14 21:19:03,882:INFO:You can set `force_col_wise=true` to remove the overhead.
+2026-03-14 21:19:03,882:INFO:[LightGBM] [Info] Total Bins 5395
+2026-03-14 21:19:03,882:INFO:[LightGBM] [Info] Number of data points in the train set: 1120, number of used features: 41
+2026-03-14 21:19:03,883:INFO:[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.500000 -> initscore=0.000000
+2026-03-14 21:19:03,958:INFO:Uploading results into container
+2026-03-14 21:19:03,959:INFO:Uploading model into container now
+2026-03-14 21:19:03,959:INFO:_master_model_container: 3
+2026-03-14 21:19:03,959:INFO:_display_container: 4
+2026-03-14 21:19:03,960:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2026-03-14 21:19:03,960:INFO:create_model() successfully completed......................................
+2026-03-14 21:19:04,055:INFO:SubProcess create_model() end ==================================
+2026-03-14 21:19:04,055:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0) result for Recall is 0.0886
+2026-03-14 21:19:04,056:INFO:LGBMClassifier(bagging_fraction=0.9, bagging_freq=3, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=1.0,
+               importance_type='split', learning_rate=0.0005, max_depth=-1,
+               min_child_samples=46, min_child_weight=0.001, min_split_gain=0,
+               n_estimators=30, n_jobs=-1, num_leaves=2, objective=None,
+               random_state=123, reg_alpha=0.2, reg_lambda=0.0005,
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0) result for Recall is 0.4629
+2026-03-14 21:19:04,057:INFO:LGBMClassifier(bagging_fraction=0.9, bagging_freq=3, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=1.0,
+               importance_type='split', learning_rate=0.0005, max_depth=-1,
+               min_child_samples=46, min_child_weight=0.001, min_split_gain=0,
+               n_estimators=30, n_jobs=-1, num_leaves=2, objective=None,
+               random_state=123, reg_alpha=0.2, reg_lambda=0.0005,
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0) is best model
+2026-03-14 21:19:04,057:INFO:choose_better completed
+2026-03-14 21:19:04,066:INFO:_master_model_container: 3
+2026-03-14 21:19:04,066:INFO:_display_container: 3
+2026-03-14 21:19:04,066:INFO:LGBMClassifier(bagging_fraction=0.9, bagging_freq=3, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=1.0,
+               importance_type='split', learning_rate=0.0005, max_depth=-1,
+               min_child_samples=46, min_child_weight=0.001, min_split_gain=0,
+               n_estimators=30, n_jobs=-1, num_leaves=2, objective=None,
+               random_state=123, reg_alpha=0.2, reg_lambda=0.0005,
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0)
+2026-03-14 21:19:04,067:INFO:tune_model() successfully completed......................................
+2026-03-14 21:19:04,166:INFO:Initializing get_config()
+2026-03-14 21:19:04,166:INFO:get_config(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001D316C0AB10>, variable=X_train)
+2026-03-14 21:19:04,166:INFO:Variable: 'X_train' used to return the transformed values in PyCaret 2.x. From PyCaret 3.x, this will return the raw values. If you need the transformed values, call get_config with 'X_train_transformed' instead.
+2026-03-14 21:19:04,174:INFO:Variable:  returned as         id vehicle_brand  vehicle_age_years     mileage_km  engine_hours  \
+795    909           BMW                5.0  148096.531250   5062.330078   
+790   1419           BMW               20.0  245058.390625   8721.515625   
+314   1061       Hyundai                5.0   37902.906250   1185.640259   
+867    634           BMW               11.0  116019.257812   3816.268311   
+528    664        Toyota               14.0   87719.226562   2868.748535   
+...    ...           ...                ...            ...           ...   
+461     85         Volvo               14.0  128560.289062   4277.809082   
+526    673          Ford                0.0  196900.234375   6828.342773   
+68    1222       Renault               15.0  134067.828125   4252.706543   
+1021   808       Renault                7.0  161609.546875   5451.585449   
+937   1479           BMW               19.0  148876.062500   5344.346680   
+
+      last_service_km_ago  oil_quality_pct  avg_trip_length_km  \
+795            205.674789        64.481750           33.539574   
+790            217.668549        72.418427           14.997455   
+314          38382.292969        53.852837           14.330807   
+867             12.701513        25.476303          192.326416   
+528           6194.751953        74.247086           12.915955   
+...                   ...              ...                 ...   
+461          20851.070312        45.621037            4.927779   
+526           6897.667969        70.209412                 NaN   
+68           29866.957031        65.332458          198.266251   
+1021          2291.765137        87.753418            8.556399   
+937           2248.003418        42.047535           66.958138   
+
+     weather_exposure fuel_type  ...  is_old_vehicle  is_high_mileage  \
+795               low    diesel  ...               0                0   
+790               low    petrol  ...               1                1   
+314               low    petrol  ...               0                0   
+867               low    diesel  ...               0                0   
+528               low    diesel  ...               0                0   
+...               ...       ...  ...             ...              ...   
+461            medium    hybrid  ...               0                0   
+526            medium    diesel  ...               0                0   
+68                low    diesel  ...               1                0   
+1021             high    petrol  ...               0                0   
+937              high    petrol  ...               1                0   
+
+     is_low_oil_quality  is_dirty  age_x_mileage  oil_x_service  log_mileage  \
+795                   0         0      59.528133       0.311996    11.905626   
+790                   0         0     248.185120       0.331179    12.409256   
+314                   0         0      52.714046       0.001403    10.542809   
+867                   1         0     128.276718       1.859379    11.661520   
+528                   0         0     159.346710       0.011984    11.381907   
+...                 ...       ...            ...            ...          ...   
+461                   0         0     164.698257       0.002188    11.764161   
+526                   0         0       0.000000       0.010177    12.190457   
+68                    0         0     177.091629       0.002187    11.806108   
+1021                  0         0      83.950615       0.038274    11.992945   
+937                   0         0     226.306641       0.018696    11.910876   
+
+      log_last_service  log_avg_trip  risk_score  
+795           5.331147      3.542106           0  
+790           5.387557      2.772430           3  
+314          10.555378      2.729864           3  
+867           2.617506      5.264380           2  
+528           8.731619      2.633036           0  
+...                ...           ...         ...  
+461           9.945209      1.779649           3  
+526           8.839084           NaN           0  
+68           10.304542      5.294642           5  
+1021          7.737514      2.257211           0  
+937           7.718243      4.218892           2  
+
+[674 rows x 27 columns]
+2026-03-14 21:19:04,174:INFO:get_config() successfully completed......................................
+2026-03-14 21:19:04,174:INFO:Initializing get_config()
+2026-03-14 21:19:04,174:INFO:get_config(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001D316C0AB10>, variable=y_train)
+2026-03-14 21:19:04,175:INFO:Variable: 'y_train' used to return the transformed values in PyCaret 2.x. From PyCaret 3.x, this will return the raw values. If you need the transformed values, call get_config with 'y_train_transformed' instead.
+2026-03-14 21:19:04,176:INFO:Variable:  returned as 795     0
+790     1
+314     0
+867     0
+528     0
+       ..
+461     0
+526     0
+68      0
+1021    0
+937     0
+Name: breakdown_next_30_days, Length: 674, dtype: int8
+2026-03-14 21:19:04,176:INFO:get_config() successfully completed......................................
+2026-03-14 21:19:04,176:INFO:Initializing get_config()
+2026-03-14 21:19:04,176:INFO:get_config(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001D316C0AB10>, variable=X_test)
+2026-03-14 21:19:04,176:INFO:Variable: 'X_test' used to return the transformed values in PyCaret 2.x. From PyCaret 3.x, this will return the raw values. If you need the transformed values, call get_config with 'X_test_transformed' instead.
+2026-03-14 21:19:04,183:INFO:Variable:  returned as        id vehicle_brand  vehicle_age_years     mileage_km  engine_hours  \
+623  1475           BMW                7.0   79080.679688   2637.702637   
+94   1180        Toyota                7.0  308279.906250   9837.985352   
+550   615    Volkswagen                6.0  196776.906250   6250.600586   
+647   975          Ford               10.0  343359.968750   9842.645508   
+637   141        Toyota               20.0   92928.929688   3450.510986   
+..    ...           ...                ...            ...           ...   
+565   561          Ford               19.0   61428.097656   1849.740356   
+11   1283    Volkswagen                8.0   92034.531250   2890.748047   
+924  1081        Toyota               10.0   81871.015625   2472.680664   
+668   238        Toyota                4.0  110560.187500   3475.711426   
+185   477           Kia               15.0  154997.203125   4928.783203   
+
+     last_service_km_ago  oil_quality_pct  avg_trip_length_km  \
+623         27086.728516        69.187820           30.209646   
+94           4894.726562        51.861294           19.772991   
+550         26542.619141        57.966312            2.730195   
+647           151.879745        76.192619            4.728339   
+637         28116.113281        84.868134          166.439728   
+..                   ...              ...                 ...   
+565         23537.816406        67.375999           13.692318   
+11           4632.801270        61.055832           86.167648   
+924         11300.654297        56.638775           37.130077   
+668          3615.368896        58.381729           24.678190   
+185         11218.697266        78.044548           13.073437   
+
+    weather_exposure fuel_type  ...  is_old_vehicle  is_high_mileage  \
+623           medium    petrol  ...               0                0   
+94               low    petrol  ...               0                1   
+550             high    petrol  ...               0                0   
+647              NaN    petrol  ...               0                1   
+637              low    petrol  ...               1                0   
+..               ...       ...  ...             ...              ...   
+565           medium    petrol  ...               1                0   
+11               low    diesel  ...               0                0   
+924            other    diesel  ...               0                0   
+668           medium    diesel  ...               0                0   
+185             high    petrol  ...               1                0   
+
+    is_low_oil_quality  is_dirty  age_x_mileage  oil_x_service  log_mileage  \
+623                  0         0      78.947655       0.002554    11.278236   
+94                   0         0      88.471367       0.010593    12.638766   
+550                  0         0      73.138985       0.002184    12.189831   
+647                  0         0     127.465378       0.498383    12.746537   
+637                  0         0     228.792023       0.003018    11.439601   
+..                 ...       ...            ...            ...          ...   
+565                  0         0     209.487137       0.002862    11.025639   
+11                   0         0      91.439438       0.013176    11.429930   
+924                  0         0     113.129128       0.005012    11.312913   
+668                  0         0      46.453297       0.016144    11.613324   
+185                  0         0     179.267532       0.006956    11.951169   
+
+     log_last_service  log_avg_trip  risk_score  
+623         10.206836      3.440727           3  
+94           8.496118      3.033654           1  
+550         10.186544      1.316460           3  
+647          5.029652      1.745426           1  
+637         10.244134      5.120624           5  
+..                ...           ...         ...  
+565         10.066406      2.687325           5  
+11           8.441133      4.467833           0  
+924          9.332705      3.641003           0  
+668          8.193226      3.245642           0  
+185          9.325426      2.644289           2  
+
+[289 rows x 27 columns]
+2026-03-14 21:19:04,183:INFO:get_config() successfully completed......................................
+2026-03-14 21:19:04,183:INFO:Initializing get_config()
+2026-03-14 21:19:04,183:INFO:get_config(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001D316C0AB10>, variable=y_test)
+2026-03-14 21:19:04,184:INFO:Variable: 'y_test' used to return the transformed values in PyCaret 2.x. From PyCaret 3.x, this will return the raw values. If you need the transformed values, call get_config with 'y_test_transformed' instead.
+2026-03-14 21:19:04,185:INFO:Variable:  returned as 623    0
+94     1
+550    0
+647    0
+637    0
+      ..
+565    0
+11     0
+924    1
+668    0
+185    0
+Name: breakdown_next_30_days, Length: 289, dtype: int8
+2026-03-14 21:19:04,185:INFO:get_config() successfully completed......................................
+2026-03-14 21:19:04,185:INFO:Initializing get_config()
+2026-03-14 21:19:04,185:INFO:get_config(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001D316C0AB10>, variable=pipeline)
+2026-03-14 21:19:04,191:INFO:Variable:  returned as Pipeline(memory=FastMemory(location=C:\Users\mateo\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['id', 'vehicle_age_years',
+                                             'mileage_km', 'engine_hours',
+                                             'last_service_km_ago',
+                                             'oil_quality_pct',
+                                             'avg_trip_length_km',
+                                             'cleanliness_score',
+                                             'driver_satisfaction_score',
+                                             'mileage_per_year', 'hours_per_km',
+                                             'servic...
+                                    transformer=OneHotEncoder(cols=['vehicle_brand',
+                                                                    'weather_exposure',
+                                                                    'fuel_type',
+                                                                    'tyre_type'],
+                                                              drop_invariant=False,
+                                                              handle_missing='return_nan',
+                                                              handle_unknown='value',
+                                                              return_df=True,
+                                                              use_cat_names=True,
+                                                              verbose=0))),
+                ('balance',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=FixImbalancer(estimator=SMOTE(k_neighbors=5,
+                                                                              random_state=123,
+                                                                              sampling_strategy='auto'))))],
+         verbose=False)
+2026-03-14 21:19:04,191:INFO:get_config() successfully completed......................................
