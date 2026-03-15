@@ -34,6 +34,7 @@
    - [3.14 Modeling Conclusions](#314-modeling-conclusions)
 4. [Part III: How to Add More Models to the Pipeline](#4-part-iii-how-to-add-more-models-to-the-pipeline)
 5. [Final Conclusions](#5-final-conclusions)
+6. [Gen AI policy](#6-gen-ai-policy)
 
 ---
 
@@ -1021,3 +1022,9 @@ best_result = max(non_baseline, key=lambda r: r['f1_class1'])
 **Best hyperparameters:** `n_estimators=100`, `max_depth=8`, `min_samples_leaf=10`, `max_features='log2'`
 **Optimal threshold:** 0.558
 **Validation metrics:** Accuracy=0.824, Precision-class1=0.471, Recall-class1=0.242, F1-class1=0.320, ROC-AUC=0.646
+
+## 6. Gen AI Policy
+
+Artificial intelligence was used to assist in this project. It was mainly used with help in writing code snippets. It was also used to get suggestions for different models other than random forest. The main thought process of the project and the choices made are our own choice and decision.
+
+
