@@ -406,14 +406,11 @@ All models were built using scikit-learn's `Pipeline` and `ColumnTransformer` ar
 ```
 ColumnTransformer
 ├── Numerical Pipeline (22 features: 8 original + 14 engineered)
-│   ├── SimpleImputer(strategy='median')
-│   └── StandardScaler()
+│   └── SimpleImputer(strategy='median')
 └── Categorical Pipeline (4 features)
-    ├── SimpleImputer(strategy='constant', fill_value='other')
+    ├── SimpleImputer(strategy='most_frequent')
     └── OneHotEncoder(handle_unknown='ignore')
 ```
-
-*Why StandardScaler for numerical features:* Standardization (zero mean, unit variance) is important for models like Logistic Regression that are sensitive to feature scales. While tree-based models (Random Forest, XGBoost) are scale-invariant, applying the same preprocessor to all models ensures consistency and does not harm tree-based model performance.
 
 *Why `handle_unknown='ignore'` in OneHotEncoder:* The test set might contain categorical values not seen during training. This setting ensures the encoder does not crash on unknown categories; instead, it assigns a zero vector (no category active), which is a safe default.
 
